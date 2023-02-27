@@ -34,4 +34,27 @@ $(document).ready(function () {
         $(this).parents('.catalog-slider').find('.catalog-slider__tabs').css('--active', $(this).parent().index() + 1);
     });
 
+    // Brand
+    $('.brand__item').each(function (i) {
+        $(this).css('--top', i * 1.2 + 'rem');
+        $('.brand__container').css('--top', i * 1.2 + 'rem');
+        let item = $(this);
+
+        $(document).scroll(function () {
+            if (item.next().length) {
+                let top = item.position().top,
+                    nextTop = item.next().position().top - rem(2.1),
+                    scale = (nextTop - top) / (item.outerHeight() + rem(25)) * 0.03;
+
+                item.css('--scale', scale);
+
+                if (nextTop - top - rem(5) <= 0) {
+                    item.addClass('hide');
+                } else {
+                    item.removeClass('hide');
+                }
+            }
+        });
+    });
+
 });
