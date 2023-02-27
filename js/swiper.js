@@ -59,6 +59,12 @@ const main_intro_slider = new Swiper('.main-intro__slider', {
             $('.main-intro__pagination').css('--pos', activeNum + 'px');
             icon.css('transform', 'rotate('+ rotate +'deg)');
         },
+        slideNextTransitionStart: function (slider) {
+            slider.thumbs.swiper.slideNext()
+        },
+        slidePrevTransitionStart: function (slider) {
+            slider.thumbs.swiper.slidePrev()
+        },
     },
 });
 
@@ -104,6 +110,12 @@ $('.catalog-slider__slider').each(function () {
             slideChange: function (slider) {
                 let activeNum = $(slider.$el).siblings('.slider-nav').find('.swiper-slide-thumb-active').position().left;
                 $(slider.$el).siblings('.slider-nav').find('.slider-nav__pagination').css('--left', activeNum + 'px');
+            },
+            slideNextTransitionStart: function (slider) {
+                slider.thumbs.swiper.slideNext()
+            },
+            slidePrevTransitionStart: function (slider) {
+                slider.thumbs.swiper.slidePrev()
             },
         },
     });
