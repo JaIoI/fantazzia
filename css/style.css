@@ -387,6 +387,11 @@ section {
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: white;
+  -webkit-transition: color 0.2s ease;
+  transition: color 0.2s ease;
+}
+.header__menu-item:hover {
+  color: #FFCE51;
 }
 .header__search {
   position: relative;
@@ -716,6 +721,11 @@ body {
           flex: 40%;
   font-size: 2rem;
   line-height: 3rem;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+.footer__list-item:hover {
+  color: #FFCE51;
 }
 .footer__form {
   display: -webkit-box;

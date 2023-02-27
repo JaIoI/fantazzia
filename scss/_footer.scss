@@ -63,6 +63,11 @@ body {
     flex: 40%;
     font-size: 2rem;
     line-height: 3rem;
+    transition: color .3s ease;
+
+    &:hover {
+      color: $yellow;
+    }
   }
 
   &__form {

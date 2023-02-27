@@ -38,6 +38,11 @@
     letter-spacing: .05em;
     text-transform: uppercase;
     color: white;
+    transition: color .2s ease;
+
+    &:hover {
+      color: $yellow;
+    }
   }
 
   &__search {
