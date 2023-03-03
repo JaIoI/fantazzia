@@ -23,7 +23,6 @@
     top: 3.2rem;
     display: flex;
     align-items: center;
-    gap: 1.6rem;
     width: 20rem;
     font-family: $despair;
     font-weight: 700;
@@ -35,9 +34,11 @@
   }
 
   &__icon {
+    flex: none;
     position: relative;
     width: 6.2rem;
     height: 6.2rem;
+    margin-right: 1.6rem;
   }
 
   &__icon-bg {
@@ -237,7 +238,6 @@
     &__icon-box {
       left: 4rem;
       top: 4rem;
-      gap: 3rem;
       width: 40rem;
       font-size: 3rem;
       line-height: 4.2rem;
@@ -246,6 +246,7 @@
     &__icon {
       width: 11rem;
       height: 11rem;
+      margin-right: 3rem;
     }
 
     &__icon-bg {
@@ -337,7 +338,6 @@
       isolation: isolate;
       flex: none;
       display: flex;
-      gap: 1.2rem;
       padding: 2rem;
     }
 
@@ -347,6 +347,7 @@
 
       &.prev {
         margin-bottom: 0;
+        margin-right: 1.2rem;
       }
 
       > svg {

@@ -128,7 +128,6 @@
 
   &__content {
     display: flex;
-    gap: 4rem;
     width: calc(100% + 4rem);
     margin: 0 -2rem -2rem -2rem;
     padding: 0 2rem 2rem 2rem;
@@ -322,7 +321,6 @@
     }
 
     &__content {
-      gap: 2.8rem;
       width: calc(100% + 2.8rem);
       margin: 0 -1.4rem -2.6rem -1.4rem;
       padding: 0 1.4rem 2.6rem 1.4rem;

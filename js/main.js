@@ -20,11 +20,7 @@ $(document).ready(function () {
     $('.catalog-slider__content').each(function () {
         let i = 1;
         $(this).find('.catalog-slider__content-item:not(:first-child)').each(function () {
-            if ($(window).width() <= 768) {
-                $(this).css('transform', 'translateX(calc(-'+ (i * 100) +'% - '+ (i * 2.8) +'rem))');
-            } else {
-                $(this).css('transform', 'translateX(calc(-'+ (i * 100) +'% - '+ (i * 4) +'rem))');
-            }
+            $(this).css('transform', 'translateX(calc(-'+ (i * 100) +'%))');
             i++;
         });
     });

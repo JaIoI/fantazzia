@@ -117,6 +117,14 @@
   }
 }
 
+.link {
+  &__text {
+  }
+
+  &__icon {
+  }
+}
+
 @media (max-width: 48em) {
   .slider-nav {
     .slider-nav__pagination {
