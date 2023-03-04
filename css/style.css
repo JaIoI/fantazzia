@@ -401,6 +401,49 @@ section {
   color: #2B3A51;
 }
 
+.fancybox-bg {
+  background: rgb(55, 55, 64);
+}
+
+.fancybox-is-open .fancybox-bg {
+  opacity: 0.45;
+}
+
+.modal__stage .fancybox-slide--video .fancybox-content {
+  background: transparent;
+}
+.modal__stage .fancybox-slide--video .fancybox-content iframe,
+.modal__stage .fancybox-slide--video .fancybox-content video {
+  border: 1rem solid white;
+  border-radius: 5rem;
+  overflow: hidden;
+}
+.modal__video-close {
+  position: absolute;
+  right: -1.5rem;
+  top: -1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 5.8rem;
+  height: 5.8rem;
+  border-radius: 100%;
+  background-color: #EFEFF5;
+}
+.modal__video-close > svg {
+  width: 3rem;
+  height: 3rem;
+}
+.modal__video-close > svg path {
+  stroke: #373740;
+}
+
 @media (max-width: 48em) {
   .slider-nav .slider-nav__pagination {
     --left: 3.6rem;
@@ -478,6 +521,26 @@ section {
   }
   .breadcrumbs__item:not(:last-child):after {
     margin: 0 2rem 0 1rem;
+  }
+  .fancybox-slide {
+    padding: 0 3rem;
+  }
+  .modal__stage .fancybox-slide--video .fancybox-content iframe,
+.modal__stage .fancybox-slide--video .fancybox-content video {
+    border-radius: 6rem;
+  }
+  .modal__video-close {
+    right: -2rem;
+    top: -2rem;
+    width: 8rem;
+    height: 8rem;
+  }
+  .modal__video-close > svg {
+    width: 4rem;
+    height: 4rem;
+  }
+  .modal__video-close > svg path {
+    stroke: #373740;
   }
 }
 .header {

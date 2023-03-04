@@ -2,6 +2,35 @@
 
 $(document).ready(function () {
 
+    // Modal
+    $.fancybox.defaults.smallBtn = false;
+    $.fancybox.defaults.arrows = false;
+    $.fancybox.defaults.infobar = false;
+    $.fancybox.defaults.touch = false;
+    $.fancybox.defaults.toolbar = false;
+
+    // Modal video
+    let videoWidth = $(window).width() > 768 ? rem(87.4) : rem(34.5),
+        videoHeight = $(window).width() > 768 ? rem(50) : rem(20);
+    $('.video__item[data-fancybox]').attr('data-width', videoWidth).attr('data-height', videoHeight)
+        .fancybox({
+            smallBtn: true,
+            baseTpl:
+                '<div class="fancybox-container" role="dialog" tabindex=" -1">' +
+                    '<div class="fancybox-bg"></div>' +
+                    '<div class="fancybox-stage modal__stage"></div>' +
+                '</div>',
+            btnTpl: {
+                smallBtn:
+                    '<button data-fancybox-close class="modal__video-close">' +
+                        '<svg width="29" height="30" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg">' +
+                            '<path d="M7.03125 7.96973L21.0928 22.0312" stroke="#373740" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>' +
+                            '<path d="M7.03125 22.0303L21.0928 7.96875" stroke="#373740" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>' +
+                        '</svg>' +
+                    "</button>",
+            }
+    });
+
     // Header search
     $('.header__search input').focusin(function () {
         $(this).parent().addClass('active');
