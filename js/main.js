@@ -53,4 +53,22 @@ $(document).ready(function () {
         });
     });
 
+    // news tabs
+    $('.news__tab').click(function () {
+        $('.news__tab.active').removeClass('active');
+        $(this).addClass('active');
+        let item = $(this);
+
+        function newsDotMove(item) {
+            let tabLeft = item.position().left,
+                tabWidth = item.outerWidth();
+
+            $('.news__tabs').css('--left', (tabLeft + tabWidth / 2) + 'px');
+        }
+
+        newsDotMove(item);
+        setTimeout(function () {newsDotMove(item)}, 100);
+        setTimeout(function () {newsDotMove(item)}, 200);
+    });
+
 });
