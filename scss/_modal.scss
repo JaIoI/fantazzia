@@ -1,0 +1,77 @@
+.fancybox-bg {
+  background: rgb(55, 55, 64);
+}
+.fancybox-is-open .fancybox-bg {
+  opacity: .45;
+}
+
+.modal {
+  &__stage {
+    .fancybox-slide--video .fancybox-content {
+      background: transparent;
+
+      iframe,
+      video {
+        border: 1rem solid white;
+        border-radius: 5rem;
+        overflow: hidden;
+        background-color: #000;
+      }
+    }
+  }
+
+  &__video-close {
+    position: absolute;
+    right: -1.5rem;
+    top: -1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 5.8rem;
+    height: 5.8rem;
+    border-radius: 100%;
+    background-color: #EFEFF5;
+
+    > svg {
+      width: 3rem;
+      height: 3rem;
+
+      path {
+        stroke: #373740;
+      }
+    }
+  }
+}
+
+@media (max-width: 48em) {
+  .fancybox-slide {
+    padding: 0 3rem;
+  }
+
+  .modal {
+    &__stage {
+      .fancybox-slide--video .fancybox-content {
+        iframe,
+        video {
+          border-radius: 6rem;
+        }
+      }
+    }
+
+    &__video-close {
+      right: -2rem;
+      top: -2rem;
+      width: 8rem;
+      height: 8rem;
+
+      > svg {
+        width: 4rem;
+        height: 4rem;
+
+        path {
+          stroke: #373740;
+        }
+      }
+    }
+  }
+}
