@@ -37,6 +37,7 @@
       height: 45rem;
       padding: 0;
       grid-column: 1 / 5;
+      overflow: hidden;
     }
   }
 
@@ -97,6 +98,8 @@
       .contacts__list-item {
         align-items: center;
         text-transform: uppercase;
+        font-size: 1.4rem;
+        line-height: 2.1rem;
 
         > *:last-child {
           transform: translateY(.3rem);
