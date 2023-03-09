@@ -1,0 +1,174 @@
+.career {
+  &__container {
+    width: 110.6rem;
+  }
+
+  &__title {
+    margin-bottom: 4rem;
+    font-family: $despair;
+    font-weight: 700;
+    font-size: 7.3rem;
+    line-height: 7.5rem;
+  }
+
+  &__list {
+  }
+
+  &__item {
+    width: 100%;
+    padding: 2rem;
+    border-radius: 6rem;
+    background-color: #EFEFF5;
+
+    &:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__item-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 2rem 2rem 4rem;
+    border-radius: 4rem;
+    background-color: white;
+    cursor: pointer;
+
+    &.active {
+      .career__arrow {
+        > svg {
+          transform: scaleY(-1);
+        }
+      }
+    }
+  }
+
+  &__item-title {
+    font-family: $despair;
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+
+  &__arrow {
+    flex: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 8.4rem;
+    height: 8.4rem;
+    border-radius: 100%;
+    background-color: #EFEFF5;
+    margin-left: 4rem;
+
+    > svg {
+      width: 2rem;
+      height: 1.2rem;
+      transition: transform .3s ease;
+
+      path {
+        stroke: #484A5D;
+      }
+    }
+  }
+
+  &__item-content {
+    display: none;
+    padding: 6rem 4rem 4rem 4rem;
+  }
+
+  &__text-box {
+    font-size: 2rem;
+    line-height: 3rem;
+
+    &:not(:last-child) {
+      margin-bottom: 4rem;
+    }
+  }
+
+  &__text-title {
+    margin-bottom: 2rem;
+    font-family: $despair;
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+
+  &__btn {
+    .link__icon {
+      background-color: #34c27e;
+      box-shadow: 1rem 1.5rem 3rem 0 #88D1B766;
+    }
+  }
+}
+
+@media (max-width: 48em) {
+  .career {
+    &__container {
+      width: 100%;
+    }
+
+    &__title {
+      margin-bottom: 6rem;
+      font-size: 6rem;
+      line-height: 8.4rem;
+    }
+
+    &__list {
+    }
+
+    &__item {
+      padding: 3rem;
+
+      &:not(:last-child) {
+        margin-bottom: 3rem;
+      }
+    }
+
+    &__item-header {
+    }
+
+    &__item-title {
+      font-family: $circe;
+      font-weight: 800;
+      font-size: 3.6rem;
+      line-height: 4rem;
+    }
+
+    &__arrow {
+      width: 11rem;
+      height: 11rem;
+
+      > svg {
+        width: 3.4rem;
+        height: 1.8rem;
+      }
+    }
+
+    &__item-content {
+      padding: 7rem 5rem 5rem 5rem;
+    }
+
+    &__text-box {
+      font-size: 3.6rem;
+      line-height: 5rem;
+
+      &:not(:last-child) {
+        margin-bottom: 6rem;
+      }
+    }
+
+    &__text-title {
+      font-family: $circe;
+      font-weight: 800;
+      font-size: 3.6rem;
+      line-height: 6rem;
+    }
+
+    &__btn {
+      .link__icon {
+        box-shadow: 2rem 3rem 6rem 0 #88D1B766;
+      }
+    }
+  }
+}

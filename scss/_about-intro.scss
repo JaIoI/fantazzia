@@ -1,4 +1,29 @@
 .about-intro {
+  &--career {
+    .about-intro__content {
+      position: relative;
+      min-height: 62rem;
+    }
+
+    .about-intro__img-box {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      display: block;
+      width: 107.5rem;
+      height: 62rem;
+
+      &:before {
+        content: none;
+      }
+
+      > img {
+        object-fit: contain;
+        object-position: bottom;
+      }
+    }
+  }
+
   &__content {
     display: flex;
     align-items: center;
@@ -6,6 +31,7 @@
     padding: 6rem 17rem 6rem 10rem;
     border-radius: 4rem 4rem 40rem 4rem;
     background: linear-gradient(150.6deg, #34C47F 17.12%, #3FCC88 82.24%);
+    overflow: hidden;
     color: white;
   }
 
@@ -94,6 +120,7 @@
       z-index: 3;
       width: 1.4rem;
       height: 2.3rem;
+      transform: translateX(.3rem);
 
       path {
         fill: white;
@@ -108,6 +135,20 @@
 
 @media (max-width: 48em) {
   .about-intro {
+    &--career {
+      .about-intro__content {
+        min-height: auto;
+        padding-bottom: 52rem;
+      }
+
+      .about-intro__img-box {
+        right: 50%;
+        width: 90rem;
+        height: 52rem;
+        transform: translateX(50%);
+      }
+    }
+
     &__content {
       display: block;
       padding: 8rem 4rem;
@@ -152,6 +193,7 @@
       > svg {
         width: 1.6rem;
         height: 2.6rem;
+        transform: translateX(.4rem);
       }
     }
   }

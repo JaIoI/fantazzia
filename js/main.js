@@ -100,4 +100,23 @@ $(document).ready(function () {
         setTimeout(function () {newsDotMove(item)}, 200);
     });
 
+    // Career accordion
+    $('.career__item-header').click(function () {
+        if ($(this).hasClass('active')) {
+            $(this).removeClass('active').siblings('.career__item-content').slideUp(300);
+        } else {
+            let contentActive =  $('.career__item-header.active').siblings('.career__item-content'),
+                contentHeight = contentActive.length ? contentActive.outerHeight() : 0;
+
+            if (contentActive.parent().index() < $(this).parent().index()) {
+                $('body, html').animate({scrollTop: $(this).position().top - contentHeight - rem(20)}, 300);
+            } else {
+                $('body, html').animate({scrollTop: $(this).position().top - rem(20)}, 300);
+            }
+
+            $('.career__item-header').removeClass('active').siblings('.career__item-content').slideUp(300);
+            $(this).addClass('active').siblings('.career__item-content').slideDown();
+        }
+    });
+
 });
