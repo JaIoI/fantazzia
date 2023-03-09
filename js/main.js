@@ -42,7 +42,7 @@ $(document).ready(function () {
     $('.header__burger-btn').click(function () {
         $('body').toggleClass('lock');
         $(this).toggleClass('active');
-        $('.header__menu-wrap').toggleClass('active');
+        $('.header__menu-wrap, .header__logo').toggleClass('active');
     });
 
     // Catalog-slider content item
