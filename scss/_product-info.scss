@@ -60,12 +60,6 @@
       background-color: white;
       box-shadow: -1rem 5rem 0 0 #EFEFF5;
     }
-
-    &.last {
-      &:after {
-        display: none;
-      }
-    }
   }
 
   &__tab {
@@ -204,6 +198,12 @@
       &:after {
         transform: translate(100%, -5rem);
         border-radius: 0 0 0 4rem;
+      }
+
+      &.last {
+        &:after {
+          display: none;
+        }
       }
     }
 
