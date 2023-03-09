@@ -130,6 +130,14 @@
     }
   }
 
+  &__list-item > a {
+    transition: color .2s ease;
+
+    &:hover {
+      color: #34c27e;
+    }
+  }
+
   &__link {
     margin-top: auto;
     padding-top: 2rem;
