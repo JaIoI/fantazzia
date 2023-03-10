@@ -32,6 +32,7 @@ const main_intro_slider = new Swiper('.main-intro__slider', {
                 },
             },
         }),
+        multipleActiveThumbs: false,
     },
 
     breakpoints: {
@@ -103,7 +104,8 @@ $('.catalog-slider__slider').each(function () {
                         }
                     },
                 }
-            })
+            }),
+            multipleActiveThumbs: false,
         },
 
         on: {
@@ -162,7 +164,8 @@ const video_slider = new Swiper('.video-slider__slider', {
                     }
                 },
             }
-        })
+        }),
+        multipleActiveThumbs: false,
     },
 
     on: {
@@ -219,7 +222,8 @@ $('.news-slider__slider').each(function () {
                         }
                     },
                 }
-            })
+            }),
+            multipleActiveThumbs: false,
         },
 
         on: {
