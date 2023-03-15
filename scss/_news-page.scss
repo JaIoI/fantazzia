@@ -86,29 +86,17 @@
     height: 9.6rem;
     transform: translate(-50%, -50%) scale(.8);
     border-radius: 100%;
-    background-color: white;
+    border: .6rem solid white;
+    background: linear-gradient(150.6deg, #34C47F 17.12%, #3FCC88 82.24%);
     box-shadow: 0.5rem 0.6rem 3.7rem 0 rgba(0, 0, 0, 0.1);
     opacity: 0;
     transition: transform .3s ease, opacity .3s ease;
 
-    &:before {
-      content: '';
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      z-index: 1;
-      width: 8.4rem;
-      height: 8.4rem;
-      transform: translate(-50%, -50%);
-      border-radius: 100%;
-      background: linear-gradient(150.6deg, #34C47F 17.12%, #3FCC88 82.24%);
-      box-shadow: 0.4rem 0.6rem 1.3rem 0 #88D1B780;
-    }
-
     > svg {
       z-index: 3;
-      width: 1.4rem;
+      width: 2.3rem;
       height: 2.3rem;
+      transform: translateX(.2rem);
 
       path {
         fill: white;

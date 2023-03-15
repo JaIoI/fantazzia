@@ -93,8 +93,153 @@
             <a href="">Набор игровой Chompin Monster Truck</a>
         </li>
     </ul>
+<!--  При смене слайдов, нужно будет обновлять слайдер. Переменные находятся в swiper.js -->
+<!--  product_slider.update()  и  product_thumb_slider.update()  -->
     <section class="product">
         <div class="container">
+            <div class="product__content">
+                <div class="product__slider-box">
+                    <div class="product__slider-thumb-box desktop">
+                        <button type="button" class="product__thumb-arrow prev">
+                            <svg width="18" height="11" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M1.31819 8.16308L8.23182 1.31517C8.65607 0.894945 9.34393 0.894945 9.76818 1.31517L16.6818 8.16308C17.1061 8.5833 17.1061 9.26461 16.6818 9.68483C16.2576 10.1051 15.5697 10.1051 15.1454 9.68483L9 3.5978L2.85455 9.68483C2.4303 10.1051 1.74245 10.1051 1.31819 9.68483C0.893938 9.26461 0.893938 8.5833 1.31819 8.16308Z" fill="white" stroke="white"/>
+                            </svg>
+                        </button>
+                        <div class="product__slider-thumb swiper">
+                            <div class="swiper-wrapper">
+                                <div class="product__thumb-slide swiper-slide">
+                                    <img src="img/product-img1.webp" alt="">
+                                </div>
+                                <div class="product__thumb-slide swiper-slide">
+                                    <img src="img/product-img2.webp" alt="">
+                                </div>
+                                <div class="product__thumb-slide swiper-slide">
+                                    <img src="img/product-img3.webp" alt="">
+                                </div>
+                                <div class="product__thumb-slide product__thumb-slide--video swiper-slide">
+                                    <img src="img/product-img4.webp" alt="">
+                                    <div class="product__thumb-play-btn">
+                                        <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M7.88672 6.49998L0.23208 12.638L0.23208 0.361915L7.88672 6.49998Z" fill="white"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="product__thumb-slide swiper-slide">
+                                    <img src="img/product-img5.webp" alt="">
+                                </div>
+                                <div class="product__thumb-slide swiper-slide">
+                                    <img src="img/product-img1.webp" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" class="product__thumb-arrow next">
+                            <svg width="18" height="11" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M16.6818 2.83692L9.76818 9.68483C9.34393 10.1051 8.65607 10.1051 8.23182 9.68483L1.31819 2.83692C0.893936 2.4167 0.893936 1.73539 1.31819 1.31517C1.74245 0.894945 2.4303 0.894945 2.85455 1.31517L9 7.4022L15.1454 1.31517C15.5697 0.894945 16.2576 0.894945 16.6818 1.31517C17.1061 1.73539 17.1061 2.4167 16.6818 2.83692Z" fill="white" stroke="white"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="product__slider swiper">
+                        <div class="swiper-wrapper">
+                            <div class="product__slide swiper-slide">
+                                <img src="img/product-img1.webp" alt="">
+                            </div>
+                            <div class="product__slide swiper-slide">
+                                <img src="img/product-img2.webp" alt="">
+                            </div>
+                            <div class="product__slide swiper-slide">
+                                <img src="img/product-img3.webp" alt="">
+                            </div>
+                            <a href="https://www.youtube.com/watch?v=ZFykhSSqaF4" class="product__slide product__slide--video swiper-slide" data-fancybox>
+                                <img src="img/product-img4.webp" alt="">
+                                <div class="product__play-btn">
+                                    <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.88672 6.49998L0.23208 12.638L0.23208 0.361915L7.88672 6.49998Z" fill="white"/>
+                                    </svg>
+                                </div>
+                            </a>
+                            <div class="product__slide swiper-slide">
+                                <img src="img/product-img5.webp" alt="">
+                            </div>
+                            <div class="product__slide swiper-slide">
+                                <img src="img/product-img1.webp" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product__slider-pagination mobile"></div>
+                </div>
+                <div class="product__info-box">
+                    <p class="product__id">АРТИКУЛ F1260</p>
+                    <p class="product__title">
+                        Масса для лепки Play-Doh Сумасшедшие прически
+                    </p>
+                    <div class="product__text-box">
+                        <span class="product__text">
+                            Добро пожаловать в парикмахерскую! В игрушечном салоне дети могут представить себя парикмахерами и сделать “клиенту” самые креативные прически, которые они только могут вообразить. Добавляйте массу Плей-До, чтобы отрастить как можно более длинные волосы! В каждой из 8-ми баночек находится 56 грамм трехцветной массы для лепки. Подстригите клиента, используя игрушечные бритву или ножницы, и начните заново!
+                        </span>
+                        <button type="button" class="product__text-btn mobile">
+                            <span>Читать полностью</span>
+                        </button>
+                    </div>
+                    <div class="product__price-box">
+                        <p class="product__price-text desktop">Рекомендованная цена для продажи в розницу:</p>
+                        <p class="product__price">
+                            <span>2 999</span>
+                            <sup>₽</sup>
+                        </p>
+                        <p class="product__price-text mobile">—  РРЦ</p>
+                        <div class="product__price-info mobile">
+                            <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.0416 3.84996C5.0416 5.82996 2.1616 5.60496 2.5966 8.24496L4.1716 8.22996C3.8566 6.33996 6.8866 6.41496 6.8866 3.47496C6.8866 2.03496 5.7316 0.834961 3.7366 0.834961C2.3866 0.834961 1.3066 1.49496 0.766602 2.36496L1.7866 3.51996C2.2666 2.88996 2.8066 2.55996 3.6316 2.55996C4.4416 2.55996 5.0416 3.14496 5.0416 3.84996ZM2.2666 10.375C2.2666 10.99 2.7166 11.575 3.4516 11.575C4.1116 11.575 4.5616 10.99 4.5616 10.375C4.5616 9.84996 4.1116 9.26496 3.4516 9.26496C2.7166 9.26496 2.2666 9.84996 2.2666 10.375Z" fill="#484A5D"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="product__footer">
+                        <div class="product__type-slider-box">
+                            <button type="button" class="product__type-arrow prev">
+                                <svg width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.16308 16.6818L1.31517 9.76818C0.894945 9.34393 0.894945 8.65607 1.31517 8.23182L8.16308 1.31819C8.5833 0.893936 9.26461 0.893936 9.68483 1.31819C10.1051 1.74245 10.1051 2.4303 9.68483 2.85455L3.5978 9L9.68483 15.1454C10.1051 15.5697 10.1051 16.2576 9.68483 16.6818C9.26461 17.1061 8.5833 17.1061 8.16308 16.6818Z" fill="#484A5D" stroke="#484A5D"/>
+                                </svg>
+                            </button>
+                            <div class="product__type-slider swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="product__type-slide swiper-slide active">
+                                        <img src="img/product-img5.webp" alt="">
+                                    </div>
+                                    <div class="product__type-slide swiper-slide">
+                                        <img src="img/product-img5.webp" alt="">
+                                    </div>
+                                    <div class="product__type-slide swiper-slide">
+                                        <img src="img/product-img5.webp" alt="">
+                                    </div>
+                                    <div class="product__type-slide swiper-slide">
+                                        <img src="img/product-img5.webp" alt="">
+                                    </div>
+                                    <div class="product__type-slide swiper-slide">
+                                        <img src="img/product-img5.webp" alt="">
+                                    </div>
+                                    <div class="product__type-slide swiper-slide">
+                                        <img src="img/product-img5.webp" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="button" class="product__type-arrow next">
+                                <svg width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.83692 1.31819L9.68483 8.23182C10.1051 8.65607 10.1051 9.34393 9.68483 9.76818L2.83692 16.6818C2.4167 17.1061 1.73539 17.1061 1.31517 16.6818C0.894945 16.2576 0.894945 15.5697 1.31517 15.1454L7.4022 9L1.31517 2.85455C0.894945 2.4303 0.894945 1.74245 1.31517 1.31819C1.73539 0.893938 2.4167 0.893938 2.83692 1.31819Z" fill="#484A5D" stroke="#484A5D"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <button type="button" class="product__btn link popup-buy">
+                            <span class="link__text">Где купить</span>
+                            <span class="link__icon">
+                                <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14 3.00586L2 15.0059" stroke="white" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M15 15.0059L15 2.00586L2 2.00586" stroke="white" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
             <div class="product-info">
                 <div class="product-info__container">
                     <div class="product-info__tabs-box">
@@ -249,6 +394,46 @@
             </div>
         </div>
     </section>
+    <section class="article">
+        <div class="container">
+            <div class="article__content">
+                <div class="article__img-box">
+                    <img src="img/news-page-img3.webp" alt="">
+                </div>
+                <div class="article__text-box">
+                    <p class="article__sub-title">Статья для Вас</p>
+                    <p class="article__title">
+                        Игрушки для девочек.
+                        <br>Что же выбрать?
+                    </p>
+                    <a href="" class="article__link link">
+                        <p class="link__text">Читать статью</p>
+                        <div class="link__icon">
+                            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14 3.00586L2 15.0059" stroke="white" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M15 15.0059L15 2.00586L2 2.00586" stroke="white" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="brand-info">
+        <div class="container">
+            <div class="brand-info__content">
+                <div class="brand-info__text-box">
+                    <p class="brand-info__title">Информация о бренде</p>
+                    <p class="brand-info__text">
+                        Таким образом постоянный количественный рост и сфера нашей активности представляет собой интересный эксперимент проверки дальнейших направлений развития. Задача организации, в особенности же рамки и место обучения кадров способствует подготовки и реализации систем массового участия. Задача организации, в особенности же начало повседневной работы по формированию позиции представляет собой интересный эксперимент проверки новых предложений. Равным образом рамки и место обучения кадров позволяет оценить значение форм развития.
+                    </p>
+                </div>
+                <div class="brand-info__img-box">
+                    <img src="img/brand-info-img1.webp" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
 </main>
 
 <footer class="footer">
@@ -354,6 +539,50 @@
         </div>
     </div>
 </footer>
+
+<div class="modal-buy modal">
+    <div class="modal__content modal-buy__content">
+        <button data-fancybox-close class="modal__close">
+            <svg width="29" height="30" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.03125 7.96973L21.0928 22.0312" stroke="#373740" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M7.03125 22.0303L21.0928 7.96875" stroke="#373740" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </button>
+        <p class="modal-buy__title">Выберите подходящий маркетплейс</p>
+        <div class="modal-buy__list">
+            <a href="" class="modal-buy__item">
+                <div class="modal-buy__img-box">
+                    <img src="img/modal-buy-ozon.webp" alt="">
+                </div>
+                <p class="modal-buy__item-name">Ozon</p>
+            </a>
+            <a href="" class="modal-buy__item">
+                <div class="modal-buy__img-box">
+                    <img src="img/modal-buy-wild.webp" alt="">
+                </div>
+                <p class="modal-buy__item-name">Wildberries</p>
+            </a>
+            <a href="" class="modal-buy__item">
+                <div class="modal-buy__img-box">
+                    <img src="img/modal-buy-yandex.webp" alt="">
+                </div>
+                <p class="modal-buy__item-name">Яндекс Маркет</p>
+            </a>
+            <a href="" class="modal-buy__item">
+                <div class="modal-buy__img-box">
+                    <img src="img/modal-buy-sber.webp" alt="">
+                </div>
+                <p class="modal-buy__item-name">Сбер МегаМаркет</p>
+            </a>
+            <a href="" class="modal-buy__item">
+                <div class="modal-buy__img-box">
+                    <img src="img/modal-buy-ali.webp" alt="">
+                </div>
+                <p class="modal-buy__item-name">AliExpress</p>
+            </a>
+        </div>
+    </div>
+</div>
 
 
 <script src="js/jquery-3.6.0.min.js"></script>

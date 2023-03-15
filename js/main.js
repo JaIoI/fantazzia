@@ -12,7 +12,8 @@ $(document).ready(function () {
     // Modal video
     let videoWidth = $(window).width() > 768 ? rem(87.4) : rem(34.5),
         videoHeight = $(window).width() > 768 ? rem(50) : rem(20);
-    $('.video__item[data-fancybox]').attr('data-width', videoWidth).attr('data-height', videoHeight)
+    $('.video__item[data-fancybox], .news-page__img-box[data-fancybox], .product__slide[data-fancybox]')
+        .attr('data-width', videoWidth).attr('data-height', videoHeight)
         .fancybox({
             smallBtn: true,
             baseTpl:
@@ -22,13 +23,18 @@ $(document).ready(function () {
                 '</div>',
             btnTpl: {
                 smallBtn:
-                    '<button data-fancybox-close class="modal__video-close">' +
+                    '<button data-fancybox-close class="modal__close">' +
                         '<svg width="29" height="30" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg">' +
                             '<path d="M7.03125 7.96973L21.0928 22.0312" stroke="#373740" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>' +
                             '<path d="M7.03125 22.0303L21.0928 7.96875" stroke="#373740" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>' +
                         '</svg>' +
                     "</button>",
             }
+    });
+
+    // Modal buy
+    $('.popup-buy').click(function () {
+        $.fancybox.open($('.modal-buy'));
     });
 
     // Header search
@@ -117,6 +123,11 @@ $(document).ready(function () {
             $('.career__item-header').removeClass('active').siblings('.career__item-content').slideUp(300);
             $(this).addClass('active').siblings('.career__item-content').slideDown();
         }
+    });
+
+    // Product text
+    $('.product__text-btn').click(function () {
+        $(this).hide().siblings('.product__text').css('display', 'block');
     });
 
 });
