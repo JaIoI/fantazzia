@@ -3826,6 +3826,9 @@ body {
   font-size: 7.3rem;
   line-height: 7.5rem;
 }
+.career__title--center {
+  text-align: center;
+}
 .career__item {
   width: 100%;
   padding: 2rem;
@@ -4678,6 +4681,861 @@ body {
   .modal-buy__item-name {
     font-size: 3.6rem;
     line-height: 5rem;
+  }
+}
+.catalog-intro {
+  margin-bottom: 6rem;
+}
+.catalog-intro__title {
+  position: relative;
+  z-index: 1;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding-bottom: 2rem;
+  padding-right: 5rem;
+  margin-bottom: -12.2rem;
+  border-radius: 0 0 5rem 0;
+  background-color: white;
+  font-family: "Despair Display";
+  font-weight: 700;
+  font-size: 7.3rem;
+  line-height: 10.2rem;
+}
+.catalog-intro__title:before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 5rem;
+  height: 5rem;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  border-radius: 5rem 0 0 0;
+  background-color: #3ac883;
+  -webkit-box-shadow: -1rem -1rem 0 0.6rem white;
+          box-shadow: -1rem -1rem 0 0.6rem white;
+}
+.catalog-intro__title:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 5rem;
+  height: 5rem;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  border-radius: 5rem 0 0 0;
+  background-color: #3ac883;
+  -webkit-box-shadow: -1rem -1rem 0 0.6rem white;
+          box-shadow: -1rem -1rem 0 0.6rem white;
+}
+.catalog-intro__content {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 12.2rem 13rem 3rem 11rem;
+  border-radius: 5rem;
+  background-color: #3ac883;
+  color: white;
+}
+.catalog-intro__text-wrap {
+  width: 51rem;
+}
+.catalog-intro__logo-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1.6rem;
+}
+.catalog-intro__logo {
+  width: 7.2rem;
+  height: 6.4rem;
+}
+.catalog-intro__logo > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.catalog-intro__logo-text {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 0.8rem;
+  font-family: "Despair Display";
+  font-weight: 700;
+  font-size: 3rem;
+}
+.catalog-intro__logo-text > span:last-child {
+  margin-left: 0.6rem;
+  font-family: "Circe";
+  font-size: 1.6rem;
+}
+.catalog-intro__text {
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+.catalog-intro__img-box {
+  width: 84.2rem;
+  height: 42rem;
+  margin-top: -7.2rem;
+}
+.catalog-intro__img-box > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+@media (max-width: 48em) {
+  .catalog-intro {
+    margin-bottom: 8rem;
+  }
+  .catalog-intro__title {
+    padding-bottom: 1.4rem;
+    padding-right: 4rem;
+    margin-bottom: -9.8rem;
+    font-size: 6rem;
+    line-height: 8.4rem;
+  }
+  .catalog-intro__content {
+    display: block;
+    padding: 16rem 4rem 5rem 4rem;
+    border-radius: 6rem;
+  }
+  .catalog-intro__text-wrap {
+    width: 100%;
+  }
+  .catalog-intro__logo-box {
+    margin-bottom: 1.2rem;
+  }
+  .catalog-intro__logo {
+    width: 14.4rem;
+    height: 12.8rem;
+  }
+  .catalog-intro__logo-text {
+    margin-left: 0.4rem;
+    font-size: 3.6rem;
+  }
+  .catalog-intro__logo-text > span:last-child {
+    margin-left: 0.8rem;
+    font-size: 1.8rem;
+  }
+  .catalog-intro__text {
+    font-size: 3.6rem;
+    line-height: 5rem;
+  }
+  .catalog-intro__img-box {
+    width: 100%;
+    height: 36rem;
+    margin-top: 5.6rem;
+  }
+}
+.catalog__sort-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 4rem;
+}
+.catalog__sort-text {
+  font-size: 2rem;
+  color: #AAAFB6;
+}
+.catalog__sort {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.catalog__sort > *:first-child {
+  margin-right: 2rem;
+}
+.catalog__sort > *:last-child {
+  margin-left: 0.5rem;
+}
+.catalog__sort-label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.4rem;
+  font-size: 2rem;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.catalog__sort-label:hover {
+  text-decoration: none;
+}
+.catalog__sort-label.active {
+  background-color: #F4F4FC;
+  font-weight: 700;
+  text-decoration: none;
+}
+.catalog__sort-label.active > span {
+  -webkit-transform: translateY(0.2rem);
+          transform: translateY(0.2rem);
+}
+.catalog__sort-label:not(:last-child) {
+  margin-right: 1.5rem;
+}
+.catalog__sort-label > input {
+  display: none;
+}
+.catalog__cards {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40.2rem 2rem 40.2rem 2rem 40.2rem 2rem 40.2rem;
+  grid-template-columns: repeat(4, 40.2rem);
+  -webkit-column-gap: 2rem;
+     -moz-column-gap: 2rem;
+          column-gap: 2rem;
+  row-gap: 5rem;
+}
+.catalog__item {
+  padding: 2.5rem;
+  border-radius: 5rem;
+  background-color: #EFEFF5;
+  text-align: center;
+  -webkit-transition: background-color 0.3s ease, color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.catalog__item:hover {
+  background-color: #33c880;
+  color: white;
+}
+.catalog__item:hover .catalog__item-id {
+  color: white;
+}
+.catalog__item:hover .catalog__price-text {
+  color: white;
+}
+.catalog__item:hover .catalog__price-hover-btn {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.catalog__item:hover .catalog__price-hover-btn > svg path {
+  fill: white;
+}
+.catalog__item-img-box {
+  width: 100%;
+  height: 29rem;
+  margin-bottom: 1.5rem;
+}
+.catalog__item-img-box > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.catalog__item-id {
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+  line-height: 3rem;
+  color: rgba(72, 74, 94, 0.6);
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+.catalog__item-title {
+  margin-bottom: 1.8rem;
+  font-family: "Despair Display";
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 4rem;
+}
+.catalog__price-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.catalog__price-text {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  font-size: 1.8rem;
+  color: rgba(72, 74, 94, 0.6);
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+.catalog__price {
+  margin: 0 1rem;
+  font-family: "Despair Display";
+  font-weight: 700;
+  font-size: 2.4rem;
+}
+.catalog__price sup {
+  font-family: "Circe";
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+.catalog__price-hover-btn {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 100%;
+  background-color: rgba(72, 74, 94, 0.15);
+  cursor: pointer;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+.catalog__price-hover-btn > svg {
+  width: 0.8rem;
+  height: 1.2rem;
+}
+.catalog__price-hover-btn > svg path {
+  fill: #484A5E;
+  -webkit-transition: fill 0.3s ease;
+  transition: fill 0.3s ease;
+}
+.catalog__page-pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 8.8rem;
+}
+.catalog__arrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 8.4rem;
+  height: 8.4rem;
+  border-radius: 100%;
+  background-color: #EFEFF5;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+.catalog__arrow > svg {
+  width: 1.2rem;
+  height: 2rem;
+}
+.catalog__arrow > svg path {
+  stroke: #484A5D;
+}
+.catalog__arrow:hover {
+  background-color: #d9d9de;
+}
+.catalog__page-links {
+  margin: 0 3.3rem;
+  -webkit-transform: translateY(-0.6rem);
+          transform: translateY(-0.6rem);
+}
+.catalog__page-link {
+  margin: 0 1.7rem;
+  font-family: "Despair Display";
+  font-weight: 700;
+  font-size: 3rem;
+  color: #AAAFB6;
+  -webkit-transition: color 0.2s ease;
+  transition: color 0.2s ease;
+}
+.catalog__page-link.active {
+  position: relative;
+  font-size: 5rem;
+  color: #484A5D;
+}
+.catalog__page-link.active:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -1.5rem;
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 100%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: #7CE385;
+}
+.catalog__page-link:hover {
+  color: #484A5D;
+}
+
+@media (max-width: 48em) {
+  .catalog__sort-box {
+    margin-bottom: 6rem;
+  }
+  .catalog__sort-text {
+    font-size: 4rem;
+  }
+  .catalog__sort {
+    display: none;
+  }
+  .catalog__cards {
+    -ms-grid-columns: 33.4rem 2.2rem 33.4rem;
+    grid-template-columns: repeat(2, 33.4rem);
+    -webkit-column-gap: 2.2rem;
+       -moz-column-gap: 2.2rem;
+            column-gap: 2.2rem;
+    row-gap: 4rem;
+  }
+  .catalog__item {
+    padding: 3rem;
+    border-radius: 6rem;
+  }
+  .catalog__item-img-box {
+    height: 19rem;
+  }
+  .catalog__item-id {
+    margin-bottom: 0;
+    font-size: 2.6rem;
+    line-height: 3.8rem;
+  }
+  .catalog__item-title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    margin-bottom: 1rem;
+    font-size: 3.6rem;
+    line-height: 5rem;
+  }
+  .catalog__price-text {
+    display: none;
+  }
+  .catalog__price {
+    margin: 0 2rem 0 0;
+    font-size: 3.6rem;
+  }
+  .catalog__price sup {
+    font-size: 2.6rem;
+  }
+  .catalog__price-hover-btn {
+    width: 5rem;
+    height: 5rem;
+  }
+  .catalog__price-hover-btn > svg {
+    width: 1.6rem;
+    height: 2.4rem;
+  }
+  .catalog__page-pagination {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 10rem;
+  }
+  .catalog__arrow {
+    width: 11rem;
+    height: 11rem;
+  }
+  .catalog__arrow > svg {
+    width: 3.4rem;
+    height: 3.4rem;
+  }
+  .catalog__page-links {
+    margin: 0;
+    -webkit-transform: translateY(-0.6rem);
+            transform: translateY(-0.6rem);
+  }
+  .catalog__page-link {
+    margin: 0 2rem;
+  }
+  .catalog__page-link.active {
+    font-size: 4rem;
+  }
+  .catalog__page-link.active:before {
+    bottom: -2.4rem;
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+}
+.links__title {
+  margin-bottom: 5rem;
+  font-family: "Despair Display";
+  font-weight: 700;
+  font-size: 7.3rem;
+  line-height: 10.2rem;
+}
+.links__links {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40.2rem 2rem 40.2rem 2rem 40.2rem 2rem 40.2rem;
+  grid-template-columns: repeat(4, 40.2rem);
+  gap: 2rem;
+}
+.links__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 40.2rem;
+  min-height: 11.5rem;
+  border-radius: 3rem;
+  background-color: #EFEFF5;
+  font-family: "Despair Display";
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 3.5rem;
+  text-align: center;
+  -webkit-transition: color 0.25s ease, background-color 0.25s ease;
+  transition: color 0.25s ease, background-color 0.25s ease;
+}
+.links__link:hover {
+  background-color: #33c880;
+  -webkit-box-shadow: 0.4rem 0.6rem 3.5rem rgba(136, 209, 183, 0.5);
+          box-shadow: 0.4rem 0.6rem 3.5rem rgba(136, 209, 183, 0.5);
+  color: white;
+}
+
+@media (max-width: 48em) {
+  .links__title {
+    margin-bottom: 6rem;
+    font-size: 6rem;
+    line-height: 8.4rem;
+  }
+  .links__links {
+    -ms-grid-columns: 100%;
+    grid-template-columns: repeat(1, 100%);
+    gap: 3rem;
+  }
+  .links__link {
+    width: 100%;
+    min-height: 19.6rem;
+    border-radius: 6rem;
+    font-size: 4.4rem;
+    line-height: 6.2rem;
+  }
+}
+.category__title {
+  margin-bottom: 4rem;
+  font-family: "Despair Display";
+  font-weight: 700;
+  font-size: 7.3rem;
+  line-height: 10.2rem;
+}
+.category__list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 54.3rem 2rem 54.3rem 2rem 54.3rem;
+  grid-template-columns: repeat(3, 54.3rem);
+  gap: 2rem;
+}
+.category__item {
+  width: 54.3rem;
+  height: auto;
+  min-height: 55rem;
+  padding: 4rem 4rem 5.5rem 4rem;
+  border-radius: 5rem;
+  background-color: #EFEFF5;
+  -webkit-transition: background-color 0.25s ease;
+  transition: background-color 0.25s ease;
+}
+.category__item:hover {
+  background-color: #33c880;
+  -webkit-box-shadow: 0.4rem 0.6rem 3.5rem rgba(136, 209, 183, 0.5);
+          box-shadow: 0.4rem 0.6rem 3.5rem rgba(136, 209, 183, 0.5);
+}
+.category__item:hover .category__item-qty,
+.category__item:hover .category__item-title {
+  color: white;
+}
+.category__img-box {
+  width: 100%;
+  height: 34rem;
+  margin-bottom: 2.4rem;
+}
+.category__img-box > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.category__item-title {
+  width: 42rem;
+  margin: 0 auto 0.5rem auto;
+  text-align: center;
+  font-family: "Despair Display";
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 5.6rem;
+  -webkit-transition: color 0.25s ease;
+  transition: color 0.25s ease;
+}
+.category__item-qty {
+  width: 42rem;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 2rem;
+  line-height: 3rem;
+  color: rgba(72, 74, 94, 0.6);
+  -webkit-transition: color 0.25s ease;
+  transition: color 0.25s ease;
+}
+
+@media (max-width: 48em) {
+  .category__title {
+    margin-bottom: 6rem;
+    font-size: 6rem;
+    line-height: 8.4rem;
+  }
+  .category__list {
+    -ms-grid-columns: 100%;
+    grid-template-columns: repeat(1, 100%);
+    gap: 3rem;
+  }
+  .category__item {
+    width: 100%;
+    min-height: 62.4rem;
+    padding: 5rem;
+    border-radius: 6rem;
+  }
+  .category__img-box {
+    height: 37.2rem;
+    margin-bottom: 3rem;
+  }
+  .category__item-title {
+    width: 100%;
+    margin-bottom: 1rem;
+    font-size: 4.4rem;
+    line-height: 6.2rem;
+  }
+  .category__item-qty {
+    font-size: 3.6rem;
+    line-height: 5rem;
+  }
+}
+.photo__item:not(:last-child) {
+  margin-bottom: 10rem;
+}
+.photo__text-box {
+  margin-bottom: 4rem;
+  font-size: 2rem;
+  line-height: 3rem;
+  color: #2B3A51;
+}
+.photo__text-box > *:not(:last-child) {
+  margin-bottom: 2rem;
+}
+.photo__text-title {
+  font-family: "Despair Display";
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 3.5rem;
+}
+.photo__text-title:not(:last-child) {
+  margin-bottom: 4rem;
+}
+.photo__text-sub-title {
+  font-weight: 700;
+}
+.photo__slide {
+  position: relative;
+  width: 54.3rem;
+  height: 30.5rem;
+  border-radius: 5rem;
+  background-color: #D9D9D9;
+}
+.photo__slide > img {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.photo__slide:hover .photo__btn {
+  opacity: 1;
+}
+.photo__slide:hover .photo__btn:hover {
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
+}
+.photo__btn {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 11.8rem;
+  height: 11.8rem;
+  -webkit-transform: translate(-50%, -50%) scale(0.8);
+          transform: translate(-50%, -50%) scale(0.8);
+  border-radius: 100%;
+  border: 0.8rem solid white;
+  background: linear-gradient(150.6deg, #34C47F 17.12%, #3FCC88 82.24%);
+  -webkit-box-shadow: 0.5rem 0.6rem 3.7rem 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0.5rem 0.6rem 3.7rem 0 rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease, -webkit-transform 0.3s ease;
+  transition: opacity 0.3s ease, -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  transition: transform 0.3s ease, opacity 0.3s ease, -webkit-transform 0.3s ease;
+}
+.photo__btn > svg {
+  z-index: 3;
+  width: 3.8rem;
+  height: 3.8rem;
+}
+.photo__btn > svg path {
+  stroke: white;
+}
+.photo__slider-nav {
+  margin-top: 4.5rem;
+}
+
+@media (max-width: 48em) {
+  .photo__text-box {
+    margin-bottom: 7rem;
+    font-size: 3.6rem;
+    line-height: 5rem;
+  }
+  .photo__text-box > *:not(:last-child) {
+    margin-bottom: 4rem;
+  }
+  .photo__text-title {
+    font-size: 3.6rem;
+    line-height: 5rem;
+  }
+  .photo__slider {
+    margin: 0 -3rem;
+    padding: 0 3rem;
+  }
+  .photo__slide {
+    width: 100%;
+    height: 39rem;
+    border-radius: 6rem;
+  }
+  .photo__btn {
+    display: none;
+  }
+  .photo__slider-nav {
+    margin-top: 4rem;
+  }
+}
+.seo__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.seo__title {
+  margin-bottom: 4rem;
+  font-family: "Despair Display";
+  font-weight: 700;
+  font-size: 7.3rem;
+  line-height: 7.5rem;
+}
+.seo__img-box {
+  width: 78.5rem;
+  height: 45rem;
+  border-radius: 5rem 5rem 5rem 25rem;
+}
+.seo__img-box > img {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.seo__text-box {
+  width: 82.4rem;
+  font-size: 2rem;
+  line-height: 3rem;
+}
+.seo__text-box .bold {
+  font-weight: 700;
+  font-size: 2.2rem;
+}
+.seo__text-box > *:not(:last-child, .seo__title) {
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 48em) {
+  .seo__container {
+    display: block;
+  }
+  .seo__title {
+    margin-bottom: 6rem;
+    font-size: 6rem;
+    line-height: 8.4rem;
+  }
+  .seo__img-box {
+    width: 100%;
+    height: 39rem;
+    margin-bottom: 6rem;
+    border-radius: 5rem 5rem 5rem 20rem;
+  }
+  .seo__text-box {
+    width: 100%;
+    font-size: 4rem;
+    line-height: 6rem;
+  }
+  .seo__text-box .bold {
+    font-size: 4.4rem;
+  }
+  .seo__text-box > *:not(:last-child, .seo__title) {
+    margin-bottom: 4rem;
   }
 }
 body.lock {

@@ -37,6 +37,14 @@ $(document).ready(function () {
         $.fancybox.open($('.modal-buy'));
     });
 
+    // Modal image
+    $('.photo__slide').fancybox({
+        arrows: true,
+        infobar: true,
+        touch: true,
+        toolbar: true,
+    });
+
     // Header search
     $('.header__search input').focusin(function () {
         $(this).parent().addClass('active');
@@ -128,6 +136,12 @@ $(document).ready(function () {
     // Product text
     $('.product__text-btn').click(function () {
         $(this).hide().siblings('.product__text').css('display', 'block');
+    });
+
+    // Catalog sort
+    $('.catalog__sort-label input').change(function () {
+        $('.catalog__sort-label.active').removeClass('active');
+        $(this).parent().addClass('active');
     });
 
 });

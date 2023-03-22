@@ -1,0 +1,144 @@
+.photo {
+  &__list {
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 10rem;
+    }
+  }
+
+  &__text-box {
+    margin-bottom: 4rem;
+    font-size: 2rem;
+    line-height: 3rem;
+    color: #2B3A51;
+
+    > *:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__text-title {
+    font-family: $despair;
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 3.5rem;
+
+    &:not(:last-child) {
+      margin-bottom: 4rem;
+    }
+  }
+
+  &__text-sub-title {
+    font-weight: 700;
+  }
+
+  &__slider {
+  }
+
+  &__slide {
+    position: relative;
+    width: 54.3rem;
+    height: 30.5rem;
+    border-radius: 5rem;
+    background-color: #D9D9D9;
+
+    > img {
+      width: 100%;
+      height: 100%;
+      border-radius: inherit;
+      object-fit: cover;
+    }
+
+    &:hover {
+      .photo__btn {
+        opacity: 1;
+
+        &:hover {
+          transform: translate(-50%, -50%) scale(1);
+        }
+      }
+    }
+  }
+
+  &__btn {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 11.8rem;
+    height: 11.8rem;
+    transform: translate(-50%, -50%) scale(.8);
+    border-radius: 100%;
+    border: .8rem solid white;
+    background: linear-gradient(150.6deg, #34C47F 17.12%, #3FCC88 82.24%);
+    box-shadow: 0.5rem 0.6rem 3.7rem 0 rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transition: transform .3s ease, opacity .3s ease;
+
+    > svg {
+      z-index: 3;
+      width: 3.8rem;
+      height: 3.8rem;
+
+      path {
+        stroke: white;
+      }
+    }
+  }
+
+  &__slider-nav {
+    margin-top: 4.5rem;
+  }
+}
+
+@media (max-width: 48em) {
+  .photo {
+    &__list {
+    }
+
+    &__item {
+    }
+
+    &__text-box {
+      margin-bottom: 7rem;
+      font-size: 3.6rem;
+      line-height: 5rem;
+
+      > *:not(:last-child) {
+        margin-bottom: 4rem;
+      }
+    }
+
+    &__text-title {
+      font-size: 3.6rem;
+      line-height: 5rem;
+    }
+
+    &__text-sub-title {
+    }
+
+    &__slider {
+      margin: 0 -3rem;
+      padding: 0 3rem;
+    }
+
+    &__slide {
+      width: 100%;
+      height: 39rem;
+      border-radius: 6rem;
+    }
+
+    &__btn {
+      display: none;
+    }
+
+    &__slider-nav {
+      margin-top: 4rem;
+    }
+  }
+}

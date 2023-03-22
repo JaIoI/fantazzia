@@ -9,6 +9,10 @@
     font-weight: 700;
     font-size: 7.3rem;
     line-height: 7.5rem;
+
+    &--center {
+      text-align: center;
+    }
   }
 
   &__list {
