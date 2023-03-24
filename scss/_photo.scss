@@ -43,6 +43,17 @@
     }
   }
 
+  &__list-title {
+    font-family: $despair;
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 3.5rem;
+
+    &:not(:last-child) {
+      margin-bottom: 1.5rem;
+    }
+  }
+
   &__text-sub-title {
     font-weight: 700;
   }
@@ -139,6 +150,15 @@
     &__text-title {
       font-size: 3.6rem;
       line-height: 5rem;
+    }
+
+    &__list-title {
+      font-size: 3.6rem;
+      line-height: 5rem;
+
+      &:not(:last-child) {
+        margin-bottom: 3rem;
+      }
     }
 
     &__text-sub-title {

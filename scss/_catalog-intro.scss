@@ -1,6 +1,36 @@
 .catalog-intro {
   margin-bottom: 6rem;
 
+  &--lk {
+    .catalog-intro {
+      &__title {
+        &:before,
+        &:after {
+          background-color: #4576d7;
+        }
+      }
+
+      &__content {
+        background-color: #4576d7;
+        overflow: hidden;
+      }
+
+      &__text {
+        margin-bottom: 2.5rem;
+      }
+
+      &__img-box {
+        width: 71rem;
+        height: 47.8rem;
+        margin: -10rem 6rem -3.2rem 0;
+      }
+    }
+
+    .link__icon {
+      box-shadow: none;
+    }
+  }
+
   &__title {
     position: relative;
     z-index: 1;
@@ -111,6 +141,24 @@
 @media (max-width: 48em) {
   .catalog-intro {
     margin-bottom: 8rem;
+
+    &--lk {
+      .catalog-intro {
+        &__text {
+          margin-bottom: 3rem;
+        }
+
+        &__img-box {
+          width: 61rem;
+          height: 40.6rem;
+          margin: 3rem auto -5rem auto;
+        }
+      }
+
+      .link__icon {
+        box-shadow: none;
+      }
+    }
 
     &__title {
       padding-bottom: 1.4rem;
