@@ -351,10 +351,8 @@ $('.photo__slider').each(function () {
 
                 on: {
                     beforeInit: function (slider) {
-                        if ($(window).width() <= 768) {
-                            $(slider.$el).find('.swiper-slide:last-child').remove();
-                        } else {
-                            $(slider.$el).find('.swiper-slide:nth-last-child(-n+3)').remove();
+                        if ($(window).width() > 768) {
+                            (slider.$el).find('.swiper-slide:nth-last-child(-n+3)').remove();
                         }
                     },
                 }

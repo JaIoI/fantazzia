@@ -1,0 +1,140 @@
+.info-links {
+  &__title {
+    margin-bottom: 5rem;
+    font-family: $despair;
+    font-weight: 700;
+    font-size: 7.3rem;
+    line-height: 10.2rem;
+    text-align: center;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(4, 40.2rem);
+    gap: 2rem;
+  }
+
+  &__item {
+    > a {
+      display: block;
+      width: 40rem;
+      height: auto;
+      min-height: 40rem;
+      padding: 4rem;
+      border-radius: 6rem;
+      background-color: #EFEFF5;
+      transition: background-color .3s ease, box-shadow .3s ease;
+    }
+
+    &:hover {
+      > a {
+        background-color: #34c27e;
+        box-shadow: .4rem .6rem 3.5rem rgba(136, 209, 183, 0.5);
+      }
+
+      .info-links__number {
+        background-color: white;
+        color: #34c27e;
+      }
+
+      .info-links__img-box path {
+        fill: white;
+      }
+
+      .info-links__item-title {
+        color: white;
+      }
+    }
+  }
+
+  &__number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 7rem;
+    height: 4rem;
+    margin-bottom: 1rem;
+    border-radius: 100rem;
+    background-color: #34c27e;
+    box-shadow: .5rem .6rem 3.7rem rgba(0, 0, 0, 0.1);
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 3rem;
+    color: white;
+    transition: background-color .3s ease, color .3s ease;
+  }
+
+  &__img-box {
+    width: 18rem;
+    height: 18rem;
+    margin: 0 auto 2rem auto;
+
+    > svg {
+      width: 100%;
+      height: 100%;
+
+      path {
+        fill: #34c27e;
+        transition: fill .3s ease;
+      }
+    }
+  }
+
+  &__item-title {
+    font-family: $despair;
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 3.5rem;
+    transition: color .3s ease;
+  }
+}
+
+@media (max-width: 48em) {
+  .info-links {
+    &__title {
+      margin-bottom: 6rem;
+      font-size: 6rem;
+      line-height: 8.4rem;
+    }
+
+    &__list {
+      grid-template-columns: repeat(1, 100%);
+      gap: 3rem;
+    }
+
+    &__item {
+      > a {
+        width: 100%;
+        min-height: 69rem;
+        padding: 6rem;
+        border-radius: 12rem;
+      }
+
+      &:hover {
+        > a {
+          box-shadow: .8rem 1.2rem 7rem rgba(136, 209, 183, 0.5);
+        }
+      }
+    }
+
+    &__number {
+      width: 14rem;
+      height: 8rem;
+      margin-bottom: 2rem;
+      box-shadow: 1rem 1.2rem 7rem rgba(0, 0, 0, 0.1);
+      font-size: 4rem;
+      line-height: 6rem;
+    }
+
+    &__img-box {
+      width: 32rem;
+      height: 32rem;
+      margin: 0 auto 3rem auto;
+    }
+
+    &__item-title {
+      font-size: 4.4rem;
+      line-height: 6.2rem;
+    }
+  }
+}

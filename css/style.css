@@ -5359,13 +5359,24 @@ body {
 .photo__item:not(:last-child) {
   margin-bottom: 10rem;
 }
+.photo__item .link {
+  margin: 0 0 4rem 0;
+}
+.photo__date {
+  margin-bottom: 1.5rem;
+  font-family: "Despair Display";
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 4rem;
+  color: #AAAFB6;
+}
 .photo__text-box {
   margin-bottom: 4rem;
   font-size: 2rem;
   line-height: 3rem;
   color: #2B3A51;
 }
-.photo__text-box > *:not(:last-child) {
+.photo__text-box > *:not(:last-child, .photo__date) {
   margin-bottom: 2rem;
 }
 .photo__text-title {
@@ -5443,12 +5454,20 @@ body {
 }
 
 @media (max-width: 48em) {
+  .photo__item .link {
+    margin: 0 0 5rem 0;
+  }
+  .photo__date {
+    margin-bottom: 2rem;
+    font-size: 3.6rem;
+    line-height: 5rem;
+  }
   .photo__text-box {
     margin-bottom: 7rem;
     font-size: 3.6rem;
     line-height: 5rem;
   }
-  .photo__text-box > *:not(:last-child) {
+  .photo__text-box > *:not(:last-child, .photo__date) {
     margin-bottom: 4rem;
   }
   .photo__text-title {
@@ -5536,6 +5555,198 @@ body {
   }
   .seo__text-box > *:not(:last-child, .seo__title) {
     margin-bottom: 4rem;
+  }
+}
+.info-links__title {
+  margin-bottom: 5rem;
+  font-family: "Despair Display";
+  font-weight: 700;
+  font-size: 7.3rem;
+  line-height: 10.2rem;
+  text-align: center;
+}
+.info-links__list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40.2rem 2rem 40.2rem 2rem 40.2rem 2rem 40.2rem;
+  grid-template-columns: repeat(4, 40.2rem);
+  gap: 2rem;
+}
+.info-links__item > a {
+  display: block;
+  width: 40rem;
+  height: auto;
+  min-height: 40rem;
+  padding: 4rem;
+  border-radius: 6rem;
+  background-color: #EFEFF5;
+  -webkit-transition: background-color 0.3s ease, -webkit-box-shadow 0.3s ease;
+  transition: background-color 0.3s ease, -webkit-box-shadow 0.3s ease;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, -webkit-box-shadow 0.3s ease;
+}
+.info-links__item:hover > a {
+  background-color: #34c27e;
+  -webkit-box-shadow: 0.4rem 0.6rem 3.5rem rgba(136, 209, 183, 0.5);
+          box-shadow: 0.4rem 0.6rem 3.5rem rgba(136, 209, 183, 0.5);
+}
+.info-links__item:hover .info-links__number {
+  background-color: white;
+  color: #34c27e;
+}
+.info-links__item:hover .info-links__img-box path {
+  fill: white;
+}
+.info-links__item:hover .info-links__item-title {
+  color: white;
+}
+.info-links__number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 7rem;
+  height: 4rem;
+  margin-bottom: 1rem;
+  border-radius: 100rem;
+  background-color: #34c27e;
+  -webkit-box-shadow: 0.5rem 0.6rem 3.7rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0.5rem 0.6rem 3.7rem rgba(0, 0, 0, 0.1);
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 3rem;
+  color: white;
+  -webkit-transition: background-color 0.3s ease, color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.info-links__img-box {
+  width: 18rem;
+  height: 18rem;
+  margin: 0 auto 2rem auto;
+}
+.info-links__img-box > svg {
+  width: 100%;
+  height: 100%;
+}
+.info-links__img-box > svg path {
+  fill: #34c27e;
+  -webkit-transition: fill 0.3s ease;
+  transition: fill 0.3s ease;
+}
+.info-links__item-title {
+  font-family: "Despair Display";
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 3.5rem;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+
+@media (max-width: 48em) {
+  .info-links__title {
+    margin-bottom: 6rem;
+    font-size: 6rem;
+    line-height: 8.4rem;
+  }
+  .info-links__list {
+    -ms-grid-columns: 100%;
+    grid-template-columns: repeat(1, 100%);
+    gap: 3rem;
+  }
+  .info-links__item > a {
+    width: 100%;
+    min-height: 69rem;
+    padding: 6rem;
+    border-radius: 12rem;
+  }
+  .info-links__item:hover > a {
+    -webkit-box-shadow: 0.8rem 1.2rem 7rem rgba(136, 209, 183, 0.5);
+            box-shadow: 0.8rem 1.2rem 7rem rgba(136, 209, 183, 0.5);
+  }
+  .info-links__number {
+    width: 14rem;
+    height: 8rem;
+    margin-bottom: 2rem;
+    -webkit-box-shadow: 1rem 1.2rem 7rem rgba(0, 0, 0, 0.1);
+            box-shadow: 1rem 1.2rem 7rem rgba(0, 0, 0, 0.1);
+    font-size: 4rem;
+    line-height: 6rem;
+  }
+  .info-links__img-box {
+    width: 32rem;
+    height: 32rem;
+    margin: 0 auto 3rem auto;
+  }
+  .info-links__item-title {
+    font-size: 4.4rem;
+    line-height: 6.2rem;
+  }
+}
+.child-about__title {
+  margin-bottom: 4rem;
+  font-family: "Despair Display";
+  font-weight: 700;
+  font-size: 7.3rem;
+  line-height: 7.5rem;
+}
+.child-about__content {
+  font-size: 2rem;
+  line-height: 3rem;
+}
+.child-about__content > *:not(:last-child) {
+  margin-bottom: 2rem;
+}
+.child-about__content li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.child-about__content li:before {
+  content: "";
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  width: 1.4rem;
+  height: 1.4rem;
+  margin-right: 1.2rem;
+  -webkit-transform: translateY(0.6rem);
+          transform: translateY(0.6rem);
+  border: 0.4rem #34c27e solid;
+  border-radius: 100%;
+  background-color: white;
+}
+.child-about__content li:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 48em) {
+  .child-about__title {
+    margin-bottom: 6rem;
+    font-size: 6rem;
+    line-height: 8.4rem;
+  }
+  .child-about__content {
+    font-size: 3.6rem;
+    line-height: 5rem;
+  }
+  .child-about__content > *:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+  .child-about__content li:before {
+    width: 2.8rem;
+    height: 2.8rem;
+    margin-right: 2.4rem;
+    -webkit-transform: translateY(0.8rem);
+            transform: translateY(0.8rem);
+    border: 0.8rem #34c27e solid;
+  }
+  .child-about__content li:not(:last-child) {
+    margin-bottom: 2rem;
   }
 }
 body.lock {
