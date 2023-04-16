@@ -144,4 +144,13 @@ $(document).ready(function () {
         $(this).parent().addClass('active');
     });
 
+
+    // 15-04-2023
+
+    $('.condition__btn').on('click', function(evt) {
+        evt.preventDefault();
+        $(this).toggleClass('active');
+        $(this).closest('.condition').toggleClass('condition_full');
+    })
+
 });
