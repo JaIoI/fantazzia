@@ -338,7 +338,6 @@
   position: relative;
 
   &::after {
-    content: "";
     display: inline-block;
     width: 2.5rem;
     height: 2.5rem;
@@ -416,9 +415,18 @@
   }
 
   
-.dropdown_btn {
-  pointer-events: auto;
-}
+  .dropdown_btn {
+    pointer-events: auto;
+
+    &::after {
+      content: "";
+    }
+  }
+
+  .dropdown_content {
+    display: flex;
+  }
+
 }
 
 
