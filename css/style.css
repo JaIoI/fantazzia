@@ -934,7 +934,6 @@ section {
   position: relative;
 }
 .dropdown_btn::after {
-  content: "";
   display: inline-block;
   width: 2.5rem;
   height: 2.5rem;
@@ -994,6 +993,12 @@ section {
   }
   .footer_new .dropdown_btn {
     pointer-events: auto;
+  }
+  .footer_new .dropdown_btn::after {
+    content: "";
+  }
+  .footer_new .dropdown_content {
+    display: flex;
   }
 }
 .main-intro__slider {
