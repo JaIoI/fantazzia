@@ -151,6 +151,15 @@ $(document).ready(function () {
         evt.preventDefault();
         $(this).toggleClass('active');
         $(this).closest('.condition').toggleClass('condition_full');
-    })
+    });
+
+    $('.dropdown_btn').on('click', function(evt) {
+        evt.preventDefault();
+        let $this = $(this);
+        let $parent = $this.parent();
+        let $content = $parent.find('.dropdown_content');
+        $this.toggleClass('active');
+        $content.slideToggle();
+    });
 
 });

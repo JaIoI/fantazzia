@@ -1,17 +1,4 @@
-body {
-  min-height: 100vh;
-  position: relative;
-  padding-bottom: 49.9rem;
-
-  @media (max-width: 48em) {
-    padding-bottom: 218.6rem;
-  }
-}
-
 .footer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
   width: 100%;
   padding-bottom: 6.5rem;
 
@@ -293,4 +280,149 @@ body {
       height: 10rem;
     }
   }
+}
+
+
+
+
+
+
+.footer_new {
+  padding: 0;
+  .footer {
+    &__top {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      padding-bottom: 3.8rem;
+    }
+
+    &__col {
+      &:not(:last-child) {
+        margin-right: 9.5rem;
+      }
+      &_logo {
+        margin-right: 14.6rem !important;
+      }
+    }
+
+    &__list {
+      flex-direction: column;
+      flex-wrap: nowrap;
+      gap: 2rem;
+
+      &-title {
+        margin-bottom: 1.3rem;
+        line-height: 6.4rem;
+      }
+
+    }
+
+    &__logo {
+      margin-bottom: 5rem;
+    }
+    &__bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 4rem 0;
+      border-top: 1.5px solid rgba(31, 34, 43, 0.1);
+    }
+  }
+}
+
+
+
+.dropdown_btn {
+  pointer-events: none;
+  position: relative;
+
+  &::after {
+    content: "";
+    display: inline-block;
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-left: 3.3rem;
+    margin-bottom: 1rem;
+    transform: rotate(45deg);
+    border: 0.4rem solid #484A5D;
+    border-top: none;
+    border-left: none;
+    transition: 300ms;
+  }
+
+  &.active {
+    &::after {
+      transform: rotate(-135deg);
+      margin-bottom: 0;
+    }
+  }
+}
+
+.dropdown_content {
+  display: none;
+}
+
+
+
+@media (max-width: 48em) {
+  
+.footer_new {
+  .footer {
+    &__top {
+      flex-direction: column;
+      padding-bottom: 5.8rem;
+    }
+
+    &__col {
+      &:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 8rem;
+      }
+      &_logo {
+        margin-right: 0 !important;
+      }
+    }
+
+    &__list {
+      margin-top: 4.7rem;
+      
+      &-title {
+        margin-bottom: 0;
+        line-height: 6.4rem;
+      }
+
+      &-item:not(:last-child) {
+        margin-bottom: 3.2rem;
+      }
+
+    }
+
+    &__logo {
+      margin-bottom: 5rem;
+    }
+    &__bottom {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 6.5rem 0;
+      span {
+        display: block;
+        margin-bottom: 6.5rem;
+      }
+    }
+    &__request-logo {
+      display: block;
+    }
+  }
+
+  
+.dropdown_btn {
+  pointer-events: auto;
+}
+}
+
+
+
+
+
 }
