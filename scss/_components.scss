@@ -297,7 +297,7 @@
   }
 
   .breadcrumbs {
-    margin: 1rem auto 6rem auto;
+    margin: 1rem auto 6.7rem auto;
 
     &__item {
       font-size: 3.6rem;
@@ -305,7 +305,7 @@
 
       &:not(:last-child) {
         &:after {
-          margin: 0 2rem 0 1rem;
+          margin: 0 2rem 0 1.6rem;
         }
       }
     }

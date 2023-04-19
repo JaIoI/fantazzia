@@ -1,0 +1,20 @@
+.brand_history .stage__content {
+    max-width: 77rem;
+}
+
+
+.brand_history .stage__img {
+    max-width: 69.5rem;
+    border-radius: 4.5rem;
+    background: #D9D9D9;
+}
+
+
+
+@media (max-width: 48em) {
+    .brand_history .stage__img {
+        border-radius: 6rem;
+        margin-bottom: 4.2rem;
+    }
+
+}

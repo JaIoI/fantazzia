@@ -8,16 +8,16 @@
   }
 
   &__links {
-    display: grid;
-    grid-template-columns: repeat(4, 40.2rem);
-    gap: 2rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
   }
 
   &__link {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40.2rem;
+    flex-grow: 1;
     min-height: 11.5rem;
     border-radius: 3rem;
     background-color: #EFEFF5;
@@ -33,21 +33,21 @@
       box-shadow: .4rem .6rem 3.5rem rgba(136, 209, 183, 0.5);
       color: white;
     }
+
+    &:not(:last-child) {		
+      margin-right: 2rem;		
+    }
   }
 }
 
 @media (max-width: 48em) {
   .links {
     &__title {
-      margin-bottom: 6rem;
+      margin-bottom: 5.4rem;
       font-size: 6rem;
       line-height: 8.4rem;
     }
 
-    &__links {
-      grid-template-columns: repeat(1, 100%);
-      gap: 3rem;
-    }
 
     &__link {
       width: 100%;
@@ -55,6 +55,11 @@
       border-radius: 6rem;
       font-size: 4.4rem;
       line-height: 6.2rem;
+
+      &:not(:last-child) {		
+        margin-right: 0;
+        margin-bottom: 3rem;	
+      }
     }
   }
 }
