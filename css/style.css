@@ -950,10 +950,6 @@ section {
   margin-bottom: 0;
 }
 
-.dropdown_content {
-  display: none;
-}
-
 @media (max-width: 48em) {
   .footer_new .footer__top {
     flex-direction: column;
@@ -998,7 +994,7 @@ section {
     content: "";
   }
   .footer_new .dropdown_content {
-    display: flex;
+    display: none;
   }
 }
 .main-intro__slider {

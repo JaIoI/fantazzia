@@ -358,10 +358,6 @@
   }
 }
 
-.dropdown_content {
-  display: none;
-}
-
 
 
 @media (max-width: 48em) {
@@ -424,7 +420,7 @@
   }
 
   .dropdown_content {
-    display: flex;
+    display: none;
   }
 
 }
