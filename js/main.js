@@ -162,4 +162,8 @@ $(document).ready(function () {
         $content.slideToggle();
     });
 
+    $(document).ready(function() {
+        $('select').niceSelect();
+    });
+
 });

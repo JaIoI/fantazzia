@@ -14,15 +14,15 @@
     line-height: 3.5rem;
 }
 
-.option {
+.option__item {
     position: relative;
 }
 
-.option:not(:last-child) {
+.option__item:not(:last-child) {
     margin-bottom: 10.3rem;
 }
 
-.option::before {
+.option__item::before {
     position: absolute;
     top: 0;
     left: 0;
@@ -87,11 +87,11 @@
         line-height: 7rem;
     }
 
-    .option:not(:last-child) {
+    .option__item:not(:last-child) {
         margin-bottom: 12.05rem;
     }
 
-    .option::before {
+    .option__item::before {
         width: 9rem;
         height: 9rem;
         border-radius: 2.4rem;

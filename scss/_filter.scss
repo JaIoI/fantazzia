@@ -1,0 +1,75 @@
+.filter {
+	margin-bottom: 6rem;
+}
+
+.checkboxes {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 2rem;
+	margin-bottom: 6rem;
+	font-family: $despair;
+}
+
+.checkbox {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 2.4rem 3.5rem;
+	font-weight: 700;
+	font-size: 2.4rem;
+	line-height: 3.4rem;
+	background: #F4F4FC;
+	border-radius: 1000px;
+	transition: 300ms;
+	cursor: pointer;
+	user-select: none;
+
+	&__text {
+		position: relative;
+		z-index: 2;
+	}
+
+	&__bg {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		border-radius: 1000px;
+		opacity: 0;
+		background: linear-gradient(351.73deg, #28C479 -5.34%, #3FCC88 93.11%);
+		box-shadow: 1rem 1.5rem 4rem rgba(198, 255, 231, 0.5);
+		transition: opacity 300ms;
+		z-index: 1;
+	}
+
+	input:checked {
+		~.checkbox {
+			&__text {
+				color: #fff;
+			}
+
+			&__bg {
+				opacity: 1;
+			}
+		}
+	}
+
+}
+
+.selects {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	gap: 2.3rem;
+}
+
+.select {
+	&__title {
+		margin-bottom: 1.8rem;
+		font-family: $despair;
+		font-weight: 700;
+		font-size: 2.4rem;
+		line-height: 3.4rem;
+	}
+}
