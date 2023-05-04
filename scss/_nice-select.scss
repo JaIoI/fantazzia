@@ -57,7 +57,7 @@ $arrow_color: $gray !default;
     margin-top: -1.2rem;
     pointer-events: none;
     position: absolute; 
-    right: 1.2rem; 
+    right: 2.9rem; 
     top: 50%; 
     // transform-origin: 66% 66%;
     transform: rotate(0deg);
@@ -168,6 +168,26 @@ $arrow_color: $gray !default;
   &.open {
     .list {
       display: block;
+    }
+  }
+}
+
+
+@media (max-width: 48em) {
+  .nice-select {
+    height: 11rem;
+    padding-left: 5rem;
+    padding-right: 10rem;
+    font-size: 3.6rem;
+    line-height: 5rem;
+
+    .list {
+      right: 0;
+    }
+
+    .option {
+      min-height: 8rem;
+      line-height: 8rem;
     }
   }
 }

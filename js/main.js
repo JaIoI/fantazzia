@@ -166,4 +166,14 @@ $(document).ready(function () {
         $('select').niceSelect();
     });
 
+    $('.filter__toggle').on('click', function(evt) {
+        evt.preventDefault();
+        let $this = $(this);
+        let $filter_form = $this.siblings('.filter__form');
+
+        $this.toggleClass('active');
+        $filter_form.slideToggle();
+
+    });
+
 });

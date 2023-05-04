@@ -39,7 +39,7 @@
   margin-top: -1.2rem;
   pointer-events: none;
   position: absolute;
-  right: 1.2rem;
+  right: 2.9rem;
   top: 50%;
   transform: rotate(0deg);
   transition: all 0.15s ease-in-out;
@@ -140,6 +140,22 @@
   display: block;
 }
 
+@media (max-width: 48em) {
+  .nice-select {
+    height: 11rem;
+    padding-left: 5rem;
+    padding-right: 10rem;
+    font-size: 3.6rem;
+    line-height: 5rem;
+  }
+  .nice-select .list {
+    right: 0;
+  }
+  .nice-select .option {
+    min-height: 8rem;
+    line-height: 8rem;
+  }
+}
 *,
 *::before,
 *::after {
@@ -6233,14 +6249,68 @@ section {
   }
 }
 .filter {
-  margin-bottom: 6rem;
+  margin-bottom: 6.5rem;
+}
+.filter__toggle {
+  position: relative;
+  display: none;
+  width: 100%;
+  max-width: 42.4rem;
+  height: 11rem;
+  margin: 4rem auto 0;
+  font-family: "Despair Display";
+}
+.filter__toggle .show_text,
+.filter__toggle .hide_text {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  transition: 500ms;
+}
+.filter__toggle .hide_text {
+  opacity: 0;
+}
+.filter__toggle .icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 11rem;
+  height: 11rem;
+  border-radius: 1000px;
+  background: #EFEFF5;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  transition: 500ms;
+}
+.filter__toggle .icon::after {
+  content: "";
+  position: absolute;
+  top: 3.9rem;
+  right: 4.3rem;
+  transform: rotate(-45deg);
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 0.4rem solid #484A5D;
+  border-top: none;
+  border-right: none;
+}
+.filter__toggle.active .hide_text {
+  opacity: 1;
+}
+.filter__toggle.active .show_text {
+  opacity: 0;
+}
+.filter__toggle.active .icon {
+  transform: rotate(180deg);
 }
 
 .checkboxes {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
-  margin-bottom: 6rem;
+  margin-bottom: 6.3rem;
   font-family: "Despair Display";
 }
 
@@ -6249,7 +6319,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 2.4rem 3.5rem;
+  padding: 2.4rem 3.5rem 2.5rem;
   font-weight: 700;
   font-size: 2.4rem;
   line-height: 3.4rem;
@@ -6292,13 +6362,42 @@ section {
 }
 
 .select__title {
-  margin-bottom: 1.8rem;
+  margin-bottom: 1.5rem;
   font-family: "Despair Display";
   font-weight: 700;
   font-size: 2.4rem;
   line-height: 3.4rem;
 }
 
+@media (max-width: 48em) {
+  .filter__form {
+    display: none;
+  }
+  .filter__toggle {
+    display: block;
+  }
+  .selects,
+  .checkboxes {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 4rem;
+  }
+  .checkboxes {
+    margin-bottom: 8rem;
+  }
+  .checkbox {
+    font-size: 3.6rem;
+    line-height: 5rem;
+  }
+  .selects {
+    gap: 4.35rem;
+  }
+  .select__title {
+    margin-bottom: 2.5rem;
+    padding-left: 1rem;
+    font-size: 3.6rem;
+    line-height: 5rem;
+  }
+}
 .visually_hidden {
   position: absolute;
   overflow: hidden;

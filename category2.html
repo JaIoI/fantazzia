@@ -145,10 +145,10 @@
 						<div class="select">
 							<div class="select__title">Бренд</div>
 							<select name="select_brand" id="">
-								<option data-display="Выбрать" disabled>Выбрать</option>
-								<option value="brand_1">Выбрать 2</option>
-								<option value="brand_2">Не Выбрать</option>
-								<option value="brand_3">Не Выбрать 2</option>
+								<option value="brand_default" data-display="Выбрать">Все бренды</option>
+								<option value="brand_1">Бренд 1</option>
+								<option value="brand_2">Бренд 2</option>
+								<option value="brand_3">Бренд 3</option>
 							</select>
 						</div>
 						<div class="select">
@@ -162,29 +162,36 @@
 						<div class="select">
 							<div class="select__title">Возраст</div>
 							<select name="select_age" id="">
-								<option value="age_1">Выбрать</option>
-								<option value="age_2">Не Выбрать</option>
-								<option value="age_3">Не Выбрать 2</option>
+								<option value="age_default" data-display="Выбрать">Все возрасты</option>
+								<option value="age_1">Возраст 1</option>
+								<option value="age_2">Возраст 2</option>
+								<option value="age_3">Возраст 3</option>
 							</select>
 						</div>
 						<div class="select">
 							<div class="select__title">Категория (серия)</div>
 							<select name="select_cat" id="">
-								<option value="cat_1">Выбрать</option>
-								<option value="cat_2">Не Выбрать</option>
-								<option value="cat_3">Не Выбрать 2</option>
+								<option value="cat_default" data-display="Выбрать">Все категории</option>
+								<option value="cat_1">Категория 1</option>
+								<option value="cat_2">Категория 2</option>
+								<option value="cat_3">Категория 3</option>
 							</select>
 						</div>
 						<div class="select">
 							<div class="select__title">Сортировать по</div>
 							<select name="select_sort" id="">
-								<option value="sort_1">Выбрать</option>
-								<option value="sort_2">Не Выбрать</option>
-								<option value="sort_3">Не Выбрать 2</option>
+								<option value="sort_default" data-display="Выбрать">Сбросить</option>
+								<option value="sort_1">По возрастанию</option>
+								<option value="sort_2">По убыванию</option>
 							</select>
 						</div>
 					</div>
 				</form>
+				<button type="button" class="filter__toggle">
+					<span class="hide_text">Скрыть фильтры</span>
+					<span class="show_text">Показать фильтры</span>
+					<span class="icon"></span>
+				</button>
 			</div>
 			<div class="catalog__sort-box">
 				<p class="catalog__sort-text">Представлено: 1 953 товаров</p>
