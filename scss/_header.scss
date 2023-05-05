@@ -81,10 +81,13 @@
     > a {
       position: relative;
       z-index: 1;
-      pointer-events: none;
     }
 
     &--drop {
+      > a {
+        pointer-events: none;
+      }
+
       &:hover {
         &::after {
           opacity: 1;

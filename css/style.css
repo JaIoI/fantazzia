@@ -654,6 +654,8 @@ section {
 .header__menu-item > a {
   position: relative;
   z-index: 1;
+}
+.header__menu-item--drop > a {
   pointer-events: none;
 }
 .header__menu-item--drop:hover::after {
