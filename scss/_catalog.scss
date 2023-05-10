@@ -70,6 +70,8 @@
   }
 
   &__item {
+    display: flex;
+    flex-direction: column;
     padding: 2.5rem;
     border-radius: 5rem;
     background-color: #EFEFF5;
@@ -130,6 +132,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: auto;
   }
 
   &__price-text {

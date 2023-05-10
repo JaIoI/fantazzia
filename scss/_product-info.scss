@@ -91,9 +91,17 @@
   }
 }
 
+
+.product-pack,
+.product-equip,
 .product-desc {
   font-size: 2rem;
   line-height: 3rem;
+
+  ul + b {
+    display: block;
+    margin-top: 2rem;
+  }
 
   li {
     position: relative;
@@ -223,6 +231,8 @@
     }
   }
 
+  .product-pack,
+  .product-equip,
   .product-desc {
     font-size: 3.6rem;
     line-height: 5.3rem;
