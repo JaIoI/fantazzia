@@ -18,19 +18,19 @@ $(document).ready(function () {
             smallBtn: true,
             baseTpl:
                 '<div class="fancybox-container" role="dialog" tabindex=" -1">' +
-                    '<div class="fancybox-bg"></div>' +
-                    '<div class="fancybox-stage modal__stage"></div>' +
+                '<div class="fancybox-bg"></div>' +
+                '<div class="fancybox-stage modal__stage"></div>' +
                 '</div>',
             btnTpl: {
                 smallBtn:
                     '<button data-fancybox-close class="modal__close">' +
-                        '<svg width="29" height="30" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg">' +
-                            '<path d="M7.03125 7.96973L21.0928 22.0312" stroke="#373740" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>' +
-                            '<path d="M7.03125 22.0303L21.0928 7.96875" stroke="#373740" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>' +
-                        '</svg>' +
+                    '<svg width="29" height="30" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg">' +
+                    '<path d="M7.03125 7.96973L21.0928 22.0312" stroke="#373740" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>' +
+                    '<path d="M7.03125 22.0303L21.0928 7.96875" stroke="#373740" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>' +
+                    '</svg>' +
                     "</button>",
             }
-    });
+        });
 
     // Modal buy
     $('.popup-buy').click(function () {
@@ -45,13 +45,6 @@ $(document).ready(function () {
         toolbar: true,
     });
 
-    // Header search
-    $('.header__search input').focusin(function () {
-        $(this).parent().addClass('active');
-    }).focusout(function () {
-        $(this).parent().removeClass('active');
-    });
-
     // Header burger
     $('.header__burger-btn').click(function () {
         $('body').toggleClass('lock');
@@ -63,7 +56,7 @@ $(document).ready(function () {
     $('.catalog-slider__content').each(function () {
         let i = 1;
         $(this).find('.catalog-slider__content-item:not(:first-child)').each(function () {
-            $(this).css('transform', 'translateX(calc(-'+ (i * 100) +'%))');
+            $(this).css('transform', 'translateX(calc(-' + (i * 100) + '%))');
             i++;
         });
     });
@@ -110,8 +103,8 @@ $(document).ready(function () {
         }
 
         newsDotMove(item);
-        setTimeout(function () {newsDotMove(item)}, 100);
-        setTimeout(function () {newsDotMove(item)}, 200);
+        setTimeout(function () { newsDotMove(item) }, 100);
+        setTimeout(function () { newsDotMove(item) }, 200);
     });
 
     // Career accordion
@@ -119,13 +112,13 @@ $(document).ready(function () {
         if ($(this).hasClass('active')) {
             $(this).removeClass('active').siblings('.career__item-content').slideUp(300);
         } else {
-            let contentActive =  $('.career__item-header.active').siblings('.career__item-content'),
+            let contentActive = $('.career__item-header.active').siblings('.career__item-content'),
                 contentHeight = contentActive.length ? contentActive.outerHeight() : 0;
 
             if (contentActive.parent().index() < $(this).parent().index()) {
-                $('body, html').animate({scrollTop: $(this).position().top - contentHeight - rem(20)}, 300);
+                $('body, html').animate({ scrollTop: $(this).position().top - contentHeight - rem(20) }, 300);
             } else {
-                $('body, html').animate({scrollTop: $(this).position().top - rem(20)}, 300);
+                $('body, html').animate({ scrollTop: $(this).position().top - rem(20) }, 300);
             }
 
             $('.career__item-header').removeClass('active').siblings('.career__item-content').slideUp(300);
@@ -147,13 +140,13 @@ $(document).ready(function () {
 
     // 15-04-2023
 
-    $('.condition__btn').on('click', function(evt) {
+    $('.condition__btn').on('click', function (evt) {
         evt.preventDefault();
         $(this).toggleClass('active');
         $(this).closest('.condition').toggleClass('condition_full');
     });
 
-    $('.dropdown_btn').on('click', function(evt) {
+    $('.dropdown_btn').on('click', function (evt) {
         evt.preventDefault();
         let $this = $(this);
         let $parent = $this.parent();
@@ -162,11 +155,14 @@ $(document).ready(function () {
         $content.slideToggle();
     });
 
-    $(document).ready(function() {
-        $('select').niceSelect();
+    $(document).ready(function () {
+        let selects = $('select');
+        if (selects) {
+            selects.niceSelect();
+        }
     });
 
-    $('.filter__toggle').on('click', function(evt) {
+    $('.filter__toggle').on('click', function (evt) {
         evt.preventDefault();
         let $this = $(this);
         let $filter_form = $this.siblings('.filter__form');
@@ -175,5 +171,36 @@ $(document).ready(function () {
         $filter_form.slideToggle();
 
     });
+
+    $('.header__search input').on('focus', function () {
+        let $this = $(this);
+        let $searchBox = $this.closest('.header__search-box');
+
+        $searchBox.addClass('active');
+
+    });
+
+    $('.header__search-close').on('click', function (evt) {
+        evt.preventDefault();
+        let $this = $(this);
+        let $searchBox = $this.closest('.header__search-box');
+        let $input = $searchBox.find('input[type="text"]');
+
+        $input.val('');
+        $searchBox.removeClass('active');
+
+    });
+
+    $(document).on('click', function (evt) {
+        let $searchBox = $('.header__search-box');
+        let $input = $searchBox.find('input[type="text"]');
+
+        if (!$searchBox.is(evt.target)
+            && $searchBox.has(evt.target).length === 0) {
+            $input.val('');
+            $searchBox.removeClass('active');
+        }
+    });
+
 
 });
