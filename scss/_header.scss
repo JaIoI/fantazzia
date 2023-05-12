@@ -215,6 +215,13 @@
         margin-right: 1.5rem;
         object-fit: contain;
       }
+
+      span {
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
     }
 
     &.active {
@@ -507,6 +514,30 @@
       border-radius: 5.5rem;
       z-index: 15;
       transition: 500ms;
+
+    .results {
+      top: calc(100% + 5rem);
+      right: -2rem;
+      left: -2rem;
+      padding: 4.8rem 2rem;
+      border-radius: 6rem;
+    }
+
+    .result {
+      font-size: 3.6rem;
+      line-height: 5rem;
+
+      >a {
+        padding: 1.4rem 1.5rem;
+        border-radius: 4rem;
+      }
+
+      img {
+        width: 12rem;
+        height: 9rem;
+        margin-right: 2.6rem;
+      }
+    }
 
       &.active {
         z-index: 15;
