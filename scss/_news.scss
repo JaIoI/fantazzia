@@ -94,7 +94,6 @@
   &__img-box {
     width: 100%;
     height: 26.4rem;
-    margin-bottom: 1rem;
     border-radius: 6rem;
 
     > img {
@@ -193,7 +192,7 @@
     bottom: 0;
     width: 100%;
     height: auto;
-    background-color: white;
+    background: linear-gradient(to bottom, #EFEFF5 0%, #EFEFF5 10%, #fff 11%, #fff 100%);
   }
 }
 
@@ -258,7 +257,6 @@
 
     &__img-box {
       height: 33.6rem;
-      margin-bottom: 2rem;
     }
 
     &__info-box {

@@ -9,15 +9,15 @@
 
   &__list {
     display: grid;
-    grid-template-columns: repeat(3, 54.3rem);
-    gap: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5rem;
   }
 
   &__item {
-    width: 54.3rem;
-    height: auto;
-    min-height: 55rem;
-    padding: 4rem 4rem 5.5rem 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
     border-radius: 5rem;
     background-color: #EFEFF5;
     transition: background-color .25s ease;
@@ -34,9 +34,9 @@
   }
 
   &__img-box {
-    width: 100%;
-    height: 34rem;
-    margin-bottom: 2.4rem;
+    width: 25rem;
+    height: 22rem;
+    margin-bottom: 1rem;
 
     > img {
       width: 100%;
@@ -46,18 +46,16 @@
   }
 
   &__item-title {
-    width: 42rem;
     margin: 0 auto .5rem auto;
     text-align: center;
     font-family: $despair;
     font-weight: 700;
-    font-size: 4rem;
-    line-height: 5.6rem;
+    font-size: 3rem;
+    line-height: 3.6rem;
     transition: color .25s ease;
   }
 
   &__item-qty {
-    width: 42rem;
     margin: 0 auto;
     text-align: center;
     font-size: 2rem;

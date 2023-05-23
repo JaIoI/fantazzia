@@ -85,7 +85,7 @@ $('.catalog-slider__slider').each(function () {
             },
             769: {
                 slidesPerView: 4,
-                spaceBetween: rem(2.2),
+                spaceBetween: rem(9),
             },
         },
 
