@@ -181,6 +181,30 @@
       object-fit: contain;
     }
   }
+
+  &__mid {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 0;
+    border-top: 1px solid rgba(31,34,43,.1);
+
+    > * {
+      display: flex;
+      align-items: center;
+
+      &:not(:last-child) {
+        margin-right: 8rem;
+      }
+
+      > svg {
+        width: 2.4rem;
+        height: 2.4rem;
+        margin-right: 1rem;
+      }
+    }
+  }
 }
 
 @media (max-width: 48em) {

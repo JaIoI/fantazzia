@@ -61,6 +61,15 @@
 		}
 
 	}
+
+	.link {
+		margin-left: auto;
+		margin-bottom: 3rem;
+		&__icon {
+			width: 5.4rem;
+			height: 5.4rem;
+		}
+	}
 }
 
 .checkboxes {
