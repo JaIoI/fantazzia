@@ -171,7 +171,7 @@
 
     &__item {
       flex-direction: column;
-      padding: 10rem 4rem 3rem 4rem;
+      padding: 6rem 3rem 3rem;
       border-radius: 6rem;
 
       &:before {
@@ -182,15 +182,15 @@
 
     &__info-box {
       width: 100%;
-      margin-bottom: 5rem;
+      margin-bottom: 3rem;
     }
 
     &__logo {
       position: absolute;
       left: 50%;
-      top: -8rem;
-      width: 18rem;
-      height: 16rem;
+      top: -6rem;
+      width: 15rem;
+      height: 13rem;
     }
 
     &__sub-title {
@@ -199,16 +199,16 @@
     }
 
     &__title {
-      margin-bottom: 4rem;
-      font-size: 6rem;
-      line-height: 8.4rem;
+      margin-bottom: 1rem;
+      font-size: 4rem;
+      line-height: 6rem;
     }
 
     &__text-img-box {
       width: 27.6rem;
       height: 27rem;
-      margin-bottom: 3rem;
-      margin-left: -5rem;
+      margin-bottom: 1rem;
+      margin-left: 0;
     }
 
     &__info-desc-box {
@@ -216,29 +216,33 @@
     }
 
     &__desc {
+      font-size: 2.3rem;
+      line-height: 3rem;
+
       &:not(:last-child) {
         margin-bottom: 1rem;
       }
 
       p {
+
         &:first-child {
           min-width: 13rem;
-          font-size: 3.6rem;
-          line-height: 6rem;
+          font-size: 2.3rem;
+          line-height: 3rem;
         }
 
         &:last-child {
-          font-size: 3.6rem;
-          line-height: 6rem;
+          font-size: 2.3rem;
+          line-height: 3rem;
         }
       }
     }
 
     &__btn {
-      width: 15rem;
-      height: 15rem;
+      width: 10rem;
+      height: 10rem;
       margin-right: 0;
-      margin-bottom: -7.5rem;
+      margin-bottom: -5rem;
 
       > svg {
         width: 4.2rem;
@@ -248,7 +252,7 @@
 
     &__img-box {
       width: calc(100% + 2rem);
-      height: 63rem;
+      height: 40rem;
       margin: 0;
       border-radius: 6rem;
     }

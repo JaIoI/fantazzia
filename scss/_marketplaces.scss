@@ -4,6 +4,8 @@
 	justify-content: center;
 	flex-wrap: wrap;
 	gap: 3.8rem 2rem;
+	transform: scale(0.75);
+	margin: -8rem 0;
 }
 
 .marketplace {
@@ -98,6 +100,8 @@
 @media (max-width: 48em) {
 	.marketplaces {
 		gap: 5rem;
+		transform: none;
+		margin: 0;
 	}
 
 	.marketplace {

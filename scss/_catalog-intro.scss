@@ -168,6 +168,10 @@
       margin-bottom: -9.8rem;
       font-size: 6rem;
       line-height: 8.4rem;
+
+      &::before {
+        content: none;
+      }
     }
 
     &__content {
