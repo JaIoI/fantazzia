@@ -218,7 +218,8 @@ $(document).ready(function () {
         $default_options.trigger('click');
         $checkboxes.prop('checked', false);
     });
-    
+
+
 
 
 });

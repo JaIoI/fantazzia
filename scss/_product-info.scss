@@ -73,11 +73,6 @@
     font-size: 2.4rem;
     line-height: 3rem;
     cursor: pointer;
-    transition: transform .25s ease;
-
-    &:hover {
-      transform: scale(1.15);
-    }
   }
 
   &__content {
@@ -196,16 +191,19 @@
     }
 
     &__tab-bg {
+      left: -2rem;
       border-radius: 4rem 4rem 0 0;
 
       &:before {
         transform: translate(-100%, -5rem);
         border-radius: 0 0 4rem 0;
+        width: 5rem;
       }
-
+      
       &:after {
         transform: translate(100%, -5rem);
         border-radius: 0 0 0 4rem;
+        width: 5rem;
       }
 
       &.last {
