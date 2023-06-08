@@ -7,6 +7,7 @@
 html {
     font-family: 'Circe'; // шрифт по умолчанию по сайту
     font-size: 0.5208335vw; // на разрешении 1920 0.520835vw === 10px
+    font-size: calc((100 / 1920) * 10vw); // где 375 это ширина моб версии макета
     font-style: normal;
     font-weight: normal;
     -webkit-animation: bugfix infinite 1s;
@@ -122,7 +123,7 @@ input[type="number"] {
 }
 
 section {
-    margin-bottom: 8rem;
+    margin-bottom: 10rem;
 }
 
 .section__title {
@@ -132,12 +133,11 @@ section {
     font-family: "Despair Display";
 }
 
-
 @media (max-width: 48em) {
     html {
         font-size: 5px;
         font-size: 1.5625vw;
-        font-size: calc((100/375) * 5vw); // где 375 это ширина моб версии макета
+        font-size: calc((100 / 375) * 5vw); // где 375 это ширина моб версии макета
         -webkit-text-size-adjust: none;
     }
 

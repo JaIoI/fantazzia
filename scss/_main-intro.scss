@@ -2,7 +2,7 @@
   &__slider {
     position: relative;
     display: flex;
-    height: 60rem;
+    height: 90rem;
     border-radius: 5rem 0 5rem 5rem;
     background: linear-gradient(352.65deg, #28C479 -6.14%, #3FCC88 93.74%);
   }
@@ -117,10 +117,10 @@
 
   &__pagination-icon {
     position: absolute;
-    right: 0;
     top: -0.5rem;
+    right: 0;
     width: 14rem;
-    height: 6rem;
+    height: 14rem;
     transform: translateY(var(--pos));
     border-radius: 3rem;
     transition: transform .25s ease;

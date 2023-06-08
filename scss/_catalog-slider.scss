@@ -49,7 +49,7 @@
   &__title {
     flex: auto;
     align-self: flex-start;
-    margin-bottom: 5rem;
+    margin-bottom: 4rem;
     font-family: $despair;
     font-weight: 700;
     font-size: 7.3rem;
@@ -148,8 +148,9 @@
 
   &__slide {
     position: relative;
+    max-width: 360px;
     height: auto;
-    padding: 4rem 3rem 9rem 3rem;
+    padding: 4.5rem 3rem 12.7rem 3rem;
     border-radius: 4.5rem;
     text-align: center;
     background: var(--color);
@@ -170,17 +171,16 @@
 
     > svg {
       width: 100%;
-      height: 7rem;
+      height: 8.2rem;
       transform: translateY(-2px);
     }
   }
 
   &__slide-title {
-    margin-bottom: 0.5rem;
     font-family: $despair;
     font-weight: 700;
-    font-size: 2.5rem;
-    line-height: 3.6rem;
+    font-size: 3rem;
+    line-height: 4rem;
     color: white;
   }
 
@@ -213,7 +213,7 @@
     align-items: center;
     justify-content: center;
     width: 18.3rem;
-    height: 5.5rem;
+    height: 7rem;
     transform: translateX(-50%);
 
     &:hover {
