@@ -49,13 +49,13 @@
     &:before {
       content: '';
       position: absolute;
-      right: 0;
+      right: 1px;
       top: 0;
       width: 5rem;
       height: 5rem;
       transform: translateX(100%);
       border-radius: 5rem 0 0 0;
-      background-color: #3ac883;
+      background-color: transparent;
       box-shadow: -1rem -1rem 0 .6rem white;
     }
 
@@ -68,7 +68,7 @@
       height: 5rem;
       transform: translateY(100%);
       border-radius: 5rem 0 0 0;
-      background-color: #3ac883;
+      background-color: transparent;
       box-shadow: -1rem -1rem 0 .6rem white;
     }
   }
@@ -80,8 +80,9 @@
     justify-content: space-between;
     padding: 12.2rem 13rem 3rem 11rem;
     border-radius: 5rem;
-    background-color: #3ac883;
+    background-color: transparent;
     color: white;
+    transition: background-color;
   }
 
   &__text-wrap {

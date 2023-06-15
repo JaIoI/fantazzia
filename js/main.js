@@ -220,6 +220,15 @@ $(document).ready(function () {
     });
 
 
+    let catalogIntroContent = $('.catalog-intro__content');
+    let catalogIntroContentColor1 = $('.catalog-intro__content').css('--color1');
+    let catalogIntroContentColor2 = $('.catalog-intro__content').css('--color2');
+
+    if (catalogIntroContent) {
+        catalogIntroContent.css('background', `linear-gradient(0, ${catalogIntroContentColor1} -6.14%, ${catalogIntroContentColor2} 93.74%)`);
+    }
+
+
 
 
 });
