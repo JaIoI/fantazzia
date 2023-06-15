@@ -45,7 +45,26 @@ const main_intro_slider = new Swiper('.main-intro__slider', {
     },
 
     on: {
-        slideChange: function () {
+        init: function (swiper) {
+            swiper.icon_after = $('.main-intro__pagination-icon .after');
+            swiper.slide_span = $(swiper.slides[swiper.activeIndex]).children('span');
+            swiper.bg_color1 = $(swiper.slides[swiper.activeIndex]).css('--color1');
+            swiper.bg_color2 = $(swiper.slides[swiper.activeIndex]).css('--color2');
+
+            $(swiper.slide_span).css('background', `linear-gradient(0, ${swiper.bg_color1} -6.14%, ${swiper.bg_color2} 93.74%)`);
+            $(swiper.slides[swiper.activeIndex]).css('background', `linear-gradient(0, ${swiper.bg_color1} -6.14%, ${swiper.bg_color2} 93.74%)`);
+            swiper.icon_after.css('background', `linear-gradient(0, ${swiper.bg_color1} -6.14%, ${swiper.bg_color2} 93.74%)`);
+        },
+
+        slideChange: function (swiper) {
+            swiper.bg_color1 = $(swiper.slides[swiper.activeIndex]).css('--color1');
+            swiper.bg_color2 = $(swiper.slides[swiper.activeIndex]).css('--color2');
+            swiper.slide_span = $(swiper.slides[swiper.activeIndex]).children('span');
+
+            $(swiper.slide_span).css('background', `linear-gradient(0, ${swiper.bg_color1} -6.14%, ${swiper.bg_color2} 93.74%)`);
+            $(swiper.slides[swiper.activeIndex]).css('background', `linear-gradient(0, ${swiper.bg_color1} -6.14%, ${swiper.bg_color2} 93.74%)`);
+            swiper.icon_after.css('background', `linear-gradient(0, ${swiper.bg_color1} -6.14%, ${swiper.bg_color2} 93.74%)`);
+
             let activeNum,
                 icon = $('.main-intro__icon-bg'),
                 rotate = icon.data('rotate') + 60;
