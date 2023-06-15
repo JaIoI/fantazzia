@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="font/stylesheet.css">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/jquery.fancybox.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
 
@@ -91,7 +91,7 @@
         <div class="container">
             <div class="contacts__title-box">
                 <p class="contacts__title">Наши контакты</p>
-                <button type="button" class="link desktop">
+                <button type="button" class="link open_popup_request">
                     <span class="link__text">Оставить заявку</span>
                     <span class="link__icon">
                         <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -336,6 +336,37 @@
     </div>
 </footer>
 
+<div class="popup popup_request">
+    <div class="popup__content">
+        <button class="popup__close">
+            <svg width="29" height="30" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.03125 7.96973L21.0928 22.0312" stroke="#373740" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M7.03125 22.0303L21.0928 7.96875" stroke="#373740" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </button>
+        <div class="popup__title">Заказать обратный звонок</div>
+        <form action="">
+            <label>
+                <span>Ваше имя</span>
+                <input type="text" placeholder="Иван">
+            </label>
+            <label>
+                <span>Телефон</span>
+                <input type="text" placeholder="+7 (___) ___-__-__">
+            </label>
+            <div class="text">Нажимая «Отправить», вы соглашаетесь на обработку персональных данных</div>
+            <button type="submit" class="link">
+                <span class="link__text">Отправить</span>
+                <span class="link__icon">
+                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14 3.00586L2 15.0059" stroke="white" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M15 15.0059L15 2.00586L2 2.00586" stroke="white" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </span>
+            </button>
+        </form>
+    </div>
+</div>
 
 <script src="js/jquery-3.6.0.min.js"></script>
 <script src="js/swiper-bundle.min.js"></script>

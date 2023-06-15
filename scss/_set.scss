@@ -14,6 +14,10 @@ html {
     line-height: 1.2;
     margin: 0;
     padding: 0;
+
+    &.ofh {
+        overflow: hidden;
+    }
 }
 
 body {
@@ -26,6 +30,10 @@ body {
     padding: 0;
     color: #484A5D; // цвет по умолчанию текста по сайту
     background-color: #FFFFFF;
+
+    &.ofh {
+        overflow: hidden;
+    }
 }
 
 input,

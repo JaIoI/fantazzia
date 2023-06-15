@@ -219,7 +219,6 @@ $(document).ready(function () {
         $checkboxes.prop('checked', false);
     });
 
-
     let catalogIntroContent = $('.catalog-intro__content');
     let catalogIntroContentColor1 = $('.catalog-intro__content').css('--color1');
     let catalogIntroContentColor2 = $('.catalog-intro__content').css('--color2');
@@ -227,6 +226,19 @@ $(document).ready(function () {
     if (catalogIntroContent) {
         catalogIntroContent.css('background', `linear-gradient(0, ${catalogIntroContentColor1} -6.14%, ${catalogIntroContentColor2} 93.74%)`);
     }
+
+    $(document).on('click', '.open_popup_request', function(evt) {
+        evt.preventDefault();
+        $('html, body').addClass('ofh');
+        $('.popup_request').addClass('active');
+        $(document.querySelector('.popup_request input')).focus();
+    });
+
+    $(document).on('click', '.popup__close', function(evt) {
+        evt.preventDefault();
+        $('html, body').removeClass('ofh');
+        $(this).closest('.popup').removeClass('active');
+    });
 
 
 

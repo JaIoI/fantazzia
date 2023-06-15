@@ -1,0 +1,158 @@
+.popup {
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: rgba(55, 55, 64, 0.45);
+	z-index: 99;
+
+	pointer-events: none;
+	opacity: 0;
+
+	transition: opacity 500ms;
+
+	&.active {
+		pointer-events: auto;
+		opacity: 1;
+	}
+
+	&__content {
+		position: relative;
+		width: 100%;
+		max-width: 68.3rem;
+		padding: 6rem 4.5rem;
+		background: #fff;
+		border-radius: 5rem;
+	}
+
+	&__close {
+		position: absolute;
+		top: -2rem;
+		right: -2rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 5.7rem;
+		height: 5.7rem;
+		background: #efeff5;
+		border-radius: 1000px;
+
+		svg {
+			width: 2.9rem;
+		}
+	}
+
+	&__title {
+		margin-bottom: 4rem;
+		font-family: "Despair Display", sans-serif;
+		font-weight: 700;
+		font-size: 4rem;
+		line-height: 5.6rem;
+		color: #484A5E;
+	}
+
+	form {
+		display: flex;
+		flex-direction: column;
+
+		button {
+			margin-left: auto;
+		}
+	}
+
+	label {
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 2.5rem;
+
+		>span {
+			display: block;
+			margin-bottom: 1.8rem;
+			font-family: "Despair Display", sans-serif;
+			font-weight: 700;
+			font-size: 2.4rem;
+			line-height: 3.4rem;
+			color: #484A5E;
+		}
+	}
+
+	input {
+		padding: 2.6rem 3rem;
+		font-size: 2rem;
+		line-height: 3rem;
+		background: #F4F4FC;
+		border-radius: 1000px;
+
+		&::placeholder {
+			color: #AAAFB6;
+		}
+	}
+
+	.text {
+		margin-bottom: 2.5rem;
+		font-size: 2rem;
+		line-height: 2.9rem;
+
+		color: #9898AA;
+	}
+}
+
+
+@media (max-width:48em) {
+	.popup {
+		&__content {
+			padding: 6rem 4rem;
+			border-radius: 6rem;
+		}
+	
+		&__close {
+			top: -2rem;
+			right: -2rem;
+			width: 8rem;
+			height: 8rem;
+
+			svg {
+				width: 4rem;
+				height: 4rem;
+			}
+		}
+
+		&__title {
+			margin-bottom: 4rem;
+			font-size: 6rem;
+			line-height: 8.4rem;
+		}
+
+		form {
+			button {
+				font-size: 3.6rem;
+			}
+		}
+	
+		label {
+			margin-bottom: 4rem;
+	
+			>span {
+				margin-bottom: 2.8rem;
+				font-size: 3.6rem;
+				line-height: 5rem;
+			}
+		}
+	
+		input {
+			padding: 2.6rem 5rem;
+			font-size: 3.6rem;
+			line-height: 6rem;
+		}
+	
+		.text {
+			margin-bottom: 2.5rem;
+			font-size: 3.6rem;
+			line-height: 5.4rem;
+		}
+	}
+}
