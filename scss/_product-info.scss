@@ -139,8 +139,11 @@
   &__item-dot {
     flex: auto;
     overflow: hidden;
+    margin-left: 1rem;
+    margin-right: 1rem;
 
     &:before {
+      color: #9898AA;
       content: '................................................................................................................';
     }
   }
