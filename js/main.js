@@ -32,10 +32,18 @@ $(document).ready(function () {
     //         }
     //     });
 
-    // // Modal buy
-    // $('.popup-buy').click(function () {
-    //     $.fancybox.open($('.modal-buy'));
-    // });
+    // Modal buy
+    $(document).on('click', '.popup-buy', function (evt) {
+        $('.modal-buy').addClass('active');
+        $('html').addClass('ofh');
+    });
+
+    $(document).on('click', '.modal__close', function (evt) {
+        $(this).closest('.modal').removeClass('active');
+        $('html').removeClass('ofh');
+    });
+
+
 
     // // Modal image
     // $('.photo__slide').fancybox({
@@ -47,7 +55,7 @@ $(document).ready(function () {
 
     Fancybox.bind("[data-fancybox]", {
         // Your custom options
-      });
+    });
 
     // Header burger
     $('.header__burger-btn').click(function () {
